@@ -1,0 +1,54 @@
+/* ─── Gallery section ─── */
+.gallery {
+  padding: 10px;
+}
+
+/* ─── Masonry layout ─── */
+.masonry {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.col:nth-child(2) { margin-top: 50px; }
+.col:nth-child(4) { margin-top: 25px; }
+
+/* ─── Image cards ─── */
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+.image {
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  will-change: transform;
+  transition: transform 0.6s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.06);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .masonry {
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 0 0 calc(50% - 4px);
+    margin-top: 0 !important;
+  }
+}

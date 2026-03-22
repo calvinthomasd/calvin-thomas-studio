@@ -1,0 +1,29 @@
+.mission {
+  background: #ebebea;
+  padding: 80px 48px 96px;
+  border-top: 1px solid #c8c8c6;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b6b68;
+  margin-bottom: 32px;
+}
+
+.statement {
+  font-size: clamp(28px, 4vw, 64px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: #0e0e0d;
+  max-width: 18em;
+}
+
+@media (max-width: 600px) {
+  .mission {
+    padding: 60px 28px 72px;
+  }
+}

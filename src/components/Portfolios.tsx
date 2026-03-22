@@ -1,0 +1,59 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import styles from './Portfolios.module.css'
+
+const items = [
+  {
+    index: '01',
+    label: 'Professionals',
+    description: 'Corporate, LinkedIn & business headshots.',
+    href: '#professionals',
+    photo: '/photo3.jpg',
+  },
+  {
+    index: '02',
+    label: 'Actors',
+    description: 'Theatrical headshots for casting, agents & auditions.',
+    href: '#actors',
+    photo: '/photo7.jpg',
+  },
+  {
+    index: '03',
+    label: 'Teams',
+    description: 'Group sessions for corporate & creative teams.',
+    href: '#teams',
+    photo: '/photo13.jpg',
+  },
+]
+
+export default function Portfolios() {
+  return (
+    <section className={styles.section}>
+      <p className={styles.intro}>Which best describes you?</p>
+
+      <div className={styles.grid}>
+        {items.map(({ index, label, description, href, photo }) => (
+          <Link key={index} href={href} className={styles.card}>
+            <div className={styles.imageWrap}>
+              <Image
+                src={photo}
+                alt={label}
+                fill
+                sizes="(max-width: 768px) 90vw, 30vw"
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.meta}>
+              <span className={styles.index}>[{index}]</span>
+              <div className={styles.labelRow}>
+                <span className={styles.label}>{label}</span>
+                <span className={styles.arrow} aria-hidden="true">→</span>
+              </div>
+              <span className={styles.description}>{description}</span>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  )
+}

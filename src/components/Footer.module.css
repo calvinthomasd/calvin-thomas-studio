@@ -1,0 +1,139 @@
+.footer {
+  background: #0e0e0d;
+  padding: 80px 32px 48px;
+  font-family: var(--font-inter);
+}
+
+/* ─── Body row ─── */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+/* ─── Wordmark ─── */
+.wordmark {
+  flex-shrink: 0;
+}
+
+.word {
+  display: block;
+  font-size: clamp(72px, 10.5vw, 180px);
+  font-weight: 800;
+  line-height: 0.87;
+  letter-spacing: -0.04em;
+  color: #ebebea;
+}
+
+/* ─── Contact ─── */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactDot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ebebea;
+  opacity: 0.35;
+  margin-bottom: 16px;
+}
+
+.contactLabel {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b6b68;
+  margin-bottom: 12px;
+}
+
+.contactEmail {
+  font-size: clamp(22px, 2.8vw, 44px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: #ebebea;
+  line-height: 1.1;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.contactEmail:hover {
+  text-decoration-color: rgba(235, 235, 234, 0.5);
+}
+
+/* ─── Bottom bar ─── */
+.bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(235, 235, 234, 0.1);
+}
+
+.copy {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #6b6b68;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 2rem;
+  justify-content: flex-end;
+}
+
+.link {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: rgba(235, 235, 234, 0.45);
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: #ebebea;
+  text-decoration-color: #ebebea;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 40px;
+  }
+
+  .body {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+
+  .contactEmail {
+    font-size: clamp(20px, 5.5vw, 32px);
+  }
+
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    gap: 0.25rem 1.25rem;
+  }
+}

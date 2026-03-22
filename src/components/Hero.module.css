@@ -1,0 +1,162 @@
+/* ─── Hero section ─── */
+.hero {
+  background: #ebebea;
+  padding: 80px 32px 100px;
+  font-family: var(--font-inter);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── Headline ─── */
+.headline {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(72px, 10.5vw, 180px);
+  font-weight: 800;
+  line-height: 0.87;
+  letter-spacing: -0.04em;
+  margin: 0 0 64px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.headlineWord {
+  display: block;
+}
+
+/* ─── Photo cluster ─── */
+.photoCluster {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-52%);
+  z-index: 1;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  width: clamp(260px, 30vw, 460px);
+  height: clamp(325px, 37.5vw, 575px);
+  animation: revealUp 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+.photoImage {
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.photo:hover .photoImage {
+  transform: scale(1.04);
+}
+
+/* Second image crossfades over the first */
+.photoB {
+  animation: crossfade 8s 2.5s ease-in-out infinite;
+}
+
+@keyframes crossfade {
+  0%, 30%   { opacity: 0; }
+  45%, 80%  { opacity: 1; }
+  95%, 100% { opacity: 0; }
+}
+
+/* ─── Tagline ─── */
+.tagline {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(28px, 3.5vw, 52px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #0e0e0d;
+  max-width: 700px;
+  margin: 0 0 32px;
+  animation: fadeUp 0.9s ease 0.5s both;
+}
+
+/* ─── Location ─── */
+.location {
+  position: relative;
+  z-index: 2;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b6b68;
+  margin: 0 0 40px;
+  animation: fadeIn 0.9s ease 0.7s both;
+}
+
+/* ─── Divider ─── */
+.divider {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 1px;
+  background: #c8c8c6;
+  animation: fadeIn 0.9s ease 0.8s both;
+}
+
+/* ─── Keyframes ─── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealDown {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  .photoCluster {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
+  .photo {
+    width: 46vw;
+    height: 57.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo {
+    width: 75vw;
+    height: 93.75vw;
+  }
+}

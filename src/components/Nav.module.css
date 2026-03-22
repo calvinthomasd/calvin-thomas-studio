@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.scrolled {
+  background: #ffffff;
+  border-bottom-color: rgba(14, 14, 13, 0.08);
+}
+
+.brand {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #0e0e0d;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.link:hover {
+  text-decoration-color: #0e0e0d;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  color: #0e0e0d;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+  margin-left: 0.5rem;
+}
+
+.instagram:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1.25rem;
+  }
+
+  .nav {
+    gap: 1.25rem;
+  }
+
+  .link {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    font-size: 0.6875rem;
+  }
+
+  .nav {
+    gap: 0.875rem;
+  }
+
+  .link {
+    font-size: 0.6875rem;
+  }
+}
