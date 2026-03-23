@@ -1,9 +1,8 @@
 /* ─── Hero section ─── */
 .hero {
   background: #ebebea;
-  padding: 80px 32px 100px;
+  padding: 80px 32px 60px;
   font-family: var(--font-inter);
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }

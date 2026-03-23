@@ -1,6 +1,6 @@
 /* ─── Gallery section ─── */
 .gallery {
-  padding: 10px;
+  padding: 10px 32px;
 }
 
 /* ─── Masonry layout ─── */
@@ -8,8 +8,6 @@
   display: flex;
   gap: 8px;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .col {
