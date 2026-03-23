@@ -5,6 +5,7 @@ import Mission from '@/components/Mission'
 import About from '@/components/About'
 import Portfolios from '@/components/Portfolios'
 
+
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
