@@ -6,19 +6,19 @@ const items = [
     index: '01',
     label: 'The Process.',
     text: "If the thought of being in front of a camera makes you nervous — you're in good company. Almost every client starts off feeling the same way. No experience needed, no stiff poses. Just show up as yourself and we'll take care of the rest.",
-    photo: '/photo12.jpg',
+    photo: '/landing%20images/toronto-lawyer-headshot-professional.jpg.jpg',
   },
   {
     index: '02',
     label: 'The Photos.',
     text: "The goal is to capture your actual personality. Different expressions, different energy, plenty of options to choose from. No artificial poses or heavy editing — just images that genuinely look like you on your best day.",
-    photo: '/photo6.jpg',
+    photo: '/landing%20images/theatrical-headshot-dramatic-lighting.jpg.jpg',
   },
   {
     index: '03',
     label: 'The Studio.',
     text: "Soft lighting and a wide range of backdrops give us the flexibility to create multiple looks in a single session. Whether you need a sharp LinkedIn photo or something warmer and more personal, we'll get both.",
-    photo: '/photo9.jpg',
+    photo: '/landing%20images/toronto-artist-portrait-editorial-style.jpg.jpg',
   },
 ]
 

@@ -16,7 +16,7 @@
 /* ─── Two-column card grid ─── */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 41px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .label {
-  font-size: clamp(28px, 3.5vw, 52px);
+  font-size: clamp(20px, 2.2vw, 36px);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -73,7 +73,7 @@
 }
 
 .arrow {
-  font-size: clamp(20px, 2.5vw, 36px);
+  font-size: clamp(16px, 1.8vw, 28px);
   font-weight: 300;
   color: #0e0e0d;
   flex-shrink: 0;

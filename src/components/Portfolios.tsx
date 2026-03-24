@@ -8,21 +8,21 @@ const items = [
     label: 'Professionals',
     description: 'Corporate, LinkedIn & business headshots.',
     href: '#professionals',
-    photo: '/photo3.jpg',
+    photo: '/landing%20images/actress-headshot-natural-makeup-studio.jpg.jpg',
   },
   {
     index: '02',
     label: 'Actors',
     description: 'Theatrical headshots for casting, agents & auditions.',
     href: '#actors',
-    photo: '/photo7.jpg',
+    photo: '/landing%20images/toronto-actor-headshot-natural-light.jpg.jpg',
   },
   {
     index: '03',
     label: 'Teams',
     description: 'Group sessions for corporate & creative teams.',
     href: '#teams',
-    photo: '/photo13.jpg',
+    photo: '/landing%20images/toronto-corporate-headshot-professional.jpg.jpg',
   },
 ]
 
