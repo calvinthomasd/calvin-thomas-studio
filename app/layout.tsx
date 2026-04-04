@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Cormorant_Garamond } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -11,7 +11,7 @@ const inter = Inter({
   display: 'swap',
 })
 
-const playfair = Cormorant_Garamond({
+const playfair = Playfair_Display({
   variable: '--font-playfair',
   subsets: ['latin'],
   style: ['normal'],
@@ -23,7 +23,7 @@ const playfair = Cormorant_Garamond({
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ebebea',
+  themeColor: '#e9e6dd',
 }
 
 export const metadata: Metadata = {
