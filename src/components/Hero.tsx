@@ -5,40 +5,36 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
 
-      {/* Left: text */}
-      <div className={styles.content}>
-        <h1 className={styles.headline}>
-          <span className={styles.headlineWord}>Calvin</span>
-          <span className={styles.headlineWord}>Thomas</span>
-          <span className={styles.headlineWord}>Studio</span>
-        </h1>
-        <p className={styles.tagline}>
-          We make you look good. Headshots that feel real,
-          photos that get you noticed.
-        </p>
-        <p className={styles.location}>Made in Toronto</p>
-        <div className={styles.divider} />
-      </div>
+      {/* Col 1: studio name */}
+      <h1 className={styles.headline}>
+        <span className={styles.headlineWord}>Calvin</span>
+        <span className={styles.headlineWord}>Thomas</span>
+        <span className={styles.headlineWord}>Studio</span>
+      </h1>
 
-      {/* Right: three offset crossfading photos */}
+      {/* Col 2: three offset crossfading photos */}
       <div className={styles.photoStrip}>
-
         <div className={styles.photo}>
-          <Image src="/landing%20images/toronto-film-actor-headshot-cinematic.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
-          <Image src="/landing%20images/actor-headshot-dark-background-toronto.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeA}`} priority />
+          <Image src="/landing-images/toronto-film-actor-headshot-cinematic.jpg" alt="Toronto film actor headshot of a middle-aged man with short sandy hair and blue eyes wearing a dark teal button-up shirt, with a strong direct gaze against a gradient blue-grey background" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
+          <Image src="/landing-images/actor-headshot-dark-background-toronto.jpg" alt="Toronto actor headshot of a young woman with long dark brown hair and green eyes in a black V-neck top, gazing directly at the camera against a deep dark teal background" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeA}`} priority />
         </div>
-
         <div className={styles.photo}>
-          <Image src="/landing%20images/toronto-actress-headshot-studio-portrait.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
-          <Image src="/landing%20images/actress-headshot-natural-makeup-studio.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeB}`} priority />
+          <Image src="/landing-images/toronto-actress-headshot-studio-portrait.jpg" alt="Toronto actress studio portrait of a woman with short wavy brown hair and a nose ring, wearing a sheer white houndstooth blouse, leaning forward with a direct self-assured look against a warm glowing grey backdrop" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
+          <Image src="/landing-images/actress-headshot-natural-makeup-studio.jpg" alt="Studio actress headshot of a young woman with long straight dark hair and striking blue-grey eyes wearing small gold hoop earrings and a black square-neck top, with a confident expression against a clean light grey backdrop" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeB}`} priority />
         </div>
-
         <div className={styles.photo}>
-          <Image src="/landing%20images/toronto-artist-portrait-editorial-style.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
-          <Image src="/landing%20images/theatrical-headshot-dramatic-lighting.jpg.jpg" alt="Professional headshot" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeC}`} priority />
+          <Image src="/landing-images/toronto-artist-portrait-editorial-style.jpg" alt="Toronto editorial-style portrait of a young woman with straight black hair wearing a textured green lace knit sweater and layered gold ear cuffs, seated against a raw concrete wall" fill sizes="(max-width: 1024px) 50vw, 18vw" className={styles.photoImage} priority />
+          <Image src="/landing-images/theatrical-headshot-dramatic-lighting.jpg" alt="Theatrical headshot of a young man with tousled curly brown hair cradling his face in both hands to reveal dark-painted nails, wearing a blue tie-dye shirt against a pale grey background" fill sizes="(max-width: 1024px) 50vw, 18vw" className={`${styles.photoImage} ${styles.crossfadeC}`} priority />
         </div>
-
       </div>
+
+      {/* Full-width tagline */}
+      <p className={styles.tagline}>
+        We make you look good. Headshots that feel real,
+        photos that get you noticed.
+      </p>
+
+      <p className={styles.location}>Made in Toronto</p>
 
     </section>
   )
