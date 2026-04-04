@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
         <p className={styles.tagline}>
           We make you look good. Headshots that feel real,
-          photos that get you noticed TYPO.
+          photos that get you noticed.
         </p>
         <p className={styles.location}>Made in Toronto</p>
         <div className={styles.divider} />

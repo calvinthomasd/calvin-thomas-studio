@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Cormorant_Garamond } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -8,6 +8,14 @@ const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
   weight: ['300', '400', '500', '700', '800'],
+  display: 'swap',
+})
+
+const playfair = Cormorant_Garamond({
+  variable: '--font-playfair',
+  subsets: ['latin'],
+  style: ['normal'],
+  weight: ['400'],
   display: 'swap',
 })
 
@@ -77,7 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
           <Nav />
           {children}
           <Footer />

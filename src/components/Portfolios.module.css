@@ -91,6 +91,50 @@
   color: #6b6b68;
 }
 
+/* ─── Overlay card variant ─── */
+
+/* Gradient scrim */
+.cardOverlay .imageWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(14, 14, 13, 0.75) 0%, rgba(14, 14, 13, 0.1) 55%, transparent 100%);
+  z-index: 1;
+}
+
+/* Pin meta to bottom of image */
+.cardOverlay .meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 24px 24px;
+  z-index: 2;
+  animation: metaReveal 0.7s ease 0.4s both;
+}
+
+/* White text */
+.cardOverlay .index,
+.cardOverlay .label,
+.cardOverlay .description {
+  color: #ffffff;
+}
+
+.cardOverlay .arrow {
+  color: #ffffff;
+}
+
+@keyframes metaReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
   .section {
