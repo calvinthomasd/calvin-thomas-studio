@@ -1,0 +1,126 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* ─── Full-width title ─── */
+.titleRow {
+  padding: 28px 48px 24px;
+  border-bottom: 0.5px solid rgba(14, 14, 13, 0.15);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-inter-tight);
+  font-size: 8.3vw;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: #0e0e0d;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ─── Two-column content ─── */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 0;
+}
+
+/* ─── Left: labels + tagline ─── */
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 48px 56px;
+  border-right: 0.5px solid rgba(14, 14, 13, 0.15);
+}
+
+.topLabel {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.tagline {
+  font-family: var(--font-cormorant);
+  font-size: clamp(52px, 7vw, 128px);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.0;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.bottomLabel {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+/* ─── Right: full-bleed dissolving photo ─── */
+.photoFrame {
+  position: relative;
+  overflow: hidden;
+}
+
+.photoImg {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ─── Sequential dissolve — 7 images, 35s cycle ─── */
+@keyframes dissolve {
+  0%    { opacity: 0; }
+  3%    { opacity: 1; }
+  14%   { opacity: 1; }
+  17%   { opacity: 0; }
+  100%  { opacity: 0; }
+}
+
+.d1 { animation: dissolve 35s  0s ease-in-out infinite backwards; }
+.d2 { animation: dissolve 35s  5s ease-in-out infinite backwards; }
+.d3 { animation: dissolve 35s 10s ease-in-out infinite backwards; }
+.d4 { animation: dissolve 35s 15s ease-in-out infinite backwards; }
+.d5 { animation: dissolve 35s 20s ease-in-out infinite backwards; }
+.d6 { animation: dissolve 35s 25s ease-in-out infinite backwards; }
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .titleRow {
+    padding: 20px 28px 16px;
+  }
+
+  .title {
+    font-size: 10.5vw;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    order: 2;
+    padding: 32px 28px 48px;
+    border-right: none;
+    gap: 24px;
+  }
+
+  .photoFrame {
+    order: 1;
+    aspect-ratio: 4/5;
+  }
+}

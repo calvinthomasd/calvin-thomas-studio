@@ -1,0 +1,121 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 100px);
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* ─── Left: title + labels, bottom-aligned ─── */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 72px 56px 96px 48px;
+  gap: 16px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.label {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.headline {
+  font-family: var(--font-anton);
+  font-size: clamp(60px, 11vw, 180px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.headlineWord {
+  display: block;
+}
+
+.headlineWordThomas {
+  font-size: clamp(49px, 9.1vw, 153px);
+}
+
+.dot {
+  color: #E3242B;
+}
+
+/* ─── Right: full-bleed dissolving photo ─── */
+.photoFrame {
+  position: relative;
+  overflow: hidden;
+}
+
+.photoInner {
+  position: absolute;
+  inset: 0;
+}
+
+.photoImg {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ─── Sequential crossfade — 7 images, 8.4s cycle, 1.2s stagger ─── */
+/* Each image fades in while the previous fades out (0.4s overlap) */
+@keyframes dissolve {
+  0%    { opacity: 0; }
+  5%    { opacity: 1; }
+  14%   { opacity: 1; }
+  19%   { opacity: 0; }
+  100%  { opacity: 0; }
+}
+
+.d1  { animation: dissolve 12s  0s    ease-in-out infinite backwards; }
+.d2  { animation: dissolve 12s  1.2s  ease-in-out infinite backwards; }
+.d3  { animation: dissolve 12s  2.4s  ease-in-out infinite backwards; }
+.d4  { animation: dissolve 12s  3.6s  ease-in-out infinite backwards; }
+.d5  { animation: dissolve 12s  4.8s  ease-in-out infinite backwards; }
+.d6  { animation: dissolve 12s  6.0s  ease-in-out infinite backwards; }
+.d7  { animation: dissolve 12s  7.2s  ease-in-out infinite backwards; }
+.d8  { animation: dissolve 12s  8.4s  ease-in-out infinite backwards; }
+.d9  { animation: dissolve 12s  9.6s  ease-in-out infinite backwards; }
+.d10 { animation: dissolve 12s  10.8s ease-in-out infinite backwards; }
+
+/* ─── Keyframes ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: unset;
+  }
+
+  .text {
+    order: -1;
+    justify-content: flex-start;
+    padding: 48px 24px 32px;
+  }
+
+  .headline {
+    font-size: clamp(80px, 22vw, 140px);
+  }
+
+  .headlineWordThomas {
+    font-size: clamp(66px, 18.2vw, 116px);
+  }
+
+  .photoFrame {
+    display: none;
+  }
+}

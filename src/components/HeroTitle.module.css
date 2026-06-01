@@ -1,0 +1,79 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 100px);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* ─── Image strip ─── */
+.strip {
+  display: flex;
+  width: 100%;
+}
+
+.cell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 6px;
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+}
+
+.thumbImg {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.num {
+  font-family: var(--font-inter-tight);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #0e0e0d;
+  opacity: 0.45;
+  padding-left: 3px;
+}
+
+/* ─── Bottom title ─── */
+.bottom {
+  padding: 0 0 4px 0;
+  line-height: 1;
+}
+
+.title {
+  font-family: var(--font-inter-tight);
+  font-size: 8.3vw;
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+  color: #0e0e0d;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 680px) {
+  .strip {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cell {
+    min-width: 22vw;
+    flex-shrink: 0;
+  }
+
+}

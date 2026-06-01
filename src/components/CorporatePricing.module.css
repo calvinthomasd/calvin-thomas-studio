@@ -1,0 +1,307 @@
+.page {
+  background: #ffffff;
+  padding: 100px 48px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ─── Hero ─── */
+.altHeroSection {
+  background: #ffffff;
+  margin: -100px -48px 0;
+  width: calc(100% + 96px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+}
+
+
+.altHeroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 72px 56px 96px 48px;
+  gap: 16px;
+}
+
+.altHeroHeading {
+  font-family: var(--font-anton);
+  font-size: clamp(40px, 5.5vw, 96px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.dot {
+  color: #E3242B;
+}
+
+.altLabel {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.altHeroGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.altGalleryItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ─── Sections ─── */
+.altSection {
+  background: #ffffff;
+  margin: 0 -48px;
+  padding: 72px 48px 80px;
+  width: calc(100% + 96px);
+  overflow: hidden;
+  border-top: 1px solid rgba(14, 14, 13, 0.1);
+  border-bottom: 1px solid rgba(14, 14, 13, 0.1);
+}
+
+.altHeading {
+  font-family: var(--font-anton);
+  font-size: clamp(40px, 5.5vw, 96px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  color: #0e0e0d;
+  margin: 0 0 32px;
+}
+
+.altBody {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 64px;
+  align-items: start;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.altBodyLabel {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.altBodyText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.altBodyText p {
+  font-family: var(--font-playfair);
+  font-size: clamp(17px, 1.4vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: #0e0e0d;
+  margin: 0;
+}
+
+/* ─── Team gallery ─── */
+.teamGallery {
+  margin: 0 -48px;
+  width: calc(100% + 96px);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  border-top: 1px solid rgba(14, 14, 13, 0.1);
+  border-bottom: 1px solid rgba(14, 14, 13, 0.1);
+}
+
+.teamGalleryItem {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.teamGalleryImage {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ─── Numbered list ─── */
+.numberedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.numberedItem {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 0.5px solid #dddcd8;
+}
+
+.numberedItem:last-child {
+  border-bottom: none;
+}
+
+.numberedIndex {
+  font-family: var(--font-inter-tight);
+  font-weight: 500;
+  font-size: 14px;
+  color: #E3242B;
+  letter-spacing: 0.18em;
+  min-width: 36px;
+  padding-top: 2px;
+}
+
+.numberedContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.numberedTitle {
+  font-family: var(--font-anton);
+  font-weight: 400;
+  font-size: clamp(17px, 1.4vw, 22px);
+  color: #0e0e0d;
+  margin: 0;
+}
+
+.numberedDesc {
+  font-family: var(--font-playfair);
+  font-size: clamp(17px, 1.4vw, 22px);
+  font-weight: 400;
+  color: #0e0e0d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Pull quote ─── */
+.pullQuote {
+  background: #ffffff;
+  margin: 0 -48px;
+  width: calc(100% + 96px);
+  padding: 96px 48px;
+  border-top: 1px solid rgba(14, 14, 13, 0.1);
+  border-bottom: 1px solid rgba(14, 14, 13, 0.1);
+}
+
+.pullQuoteText {
+  font-family: var(--font-playfair);
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #0e0e0d;
+  max-width: 1200px;
+  margin: 0 0 40px;
+}
+
+.pullQuoteAttrib {
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #0e0e0d;
+}
+
+/* ─── Logo grid ─── */
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 56px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.logoImage:hover {
+  opacity: 1;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .altHeroSection {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .altHeroGallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    order: -1;
+  }
+
+  .altHeroLeft {
+    justify-content: flex-start;
+    padding: 56px 28px 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 72px 24px 100px;
+  }
+
+  .altSection {
+    margin: 0 -24px;
+    padding: 56px 24px 64px;
+    width: calc(100% + 48px);
+  }
+
+  .teamGallery {
+    margin: 0 -24px;
+    width: calc(100% + 48px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pullQuote {
+    margin: 0 -24px;
+    padding: 72px 24px;
+    width: calc(100% + 48px);
+  }
+
+  .altBody {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

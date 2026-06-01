@@ -1,6 +1,6 @@
 /* ─── Hero section ─── */
 .hero {
-  background: #e9e6dd;
+  background: #ffffff;
   font-family: var(--font-inter);
   display: grid;
   grid-template-columns: 45% 55%;
@@ -11,8 +11,9 @@
 .headline {
   grid-column: 1;
   grid-row: 1;
+  font-family: var(--font-inter-tight);
   font-size: clamp(72px, 10.5vw, 180px);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 0.87;
   letter-spacing: -0.04em;
   margin: 0;
@@ -59,6 +60,7 @@
 .crossfadeA { animation: crossfade 9s 0.3s ease-in-out infinite backwards; }
 .crossfadeB { animation: crossfade 9s 1s ease-in-out infinite backwards; }
 .crossfadeC { animation: crossfade 9s 0.6s ease-in-out infinite backwards; }
+.crossfadeD { animation: crossfadeSecond 9s 0.3s ease-in-out infinite backwards; }
 
 @keyframes crossfade {
   0%, 30%   { opacity: 0; }
@@ -66,16 +68,21 @@
   95%, 100% { opacity: 0; }
 }
 
+@keyframes crossfadeSecond {
+  0%, 55%   { opacity: 0; }
+  65%, 90%  { opacity: 1; }
+  100%      { opacity: 0; }
+}
+
 /* ─── Tagline — full width, row 2 ─── */
 .tagline {
   grid-column: 1 / -1;
   grid-row: 2;
-  font-family: var(--font-playfair);
+  font-family: var(--font-inter-tight);
   font-size: clamp(32px, 4.5vw, 80px);
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300;
   line-height: 1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: #0e0e0d;
   padding: 48px 48px 40px;
   animation: fadeUp 0.9s ease 0.5s both;

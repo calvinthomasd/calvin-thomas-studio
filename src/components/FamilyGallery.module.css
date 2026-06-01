@@ -1,0 +1,84 @@
+.page {
+  background: #a8341a;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Clickable zones flanking the photo */
+.zone {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 9px;
+  color: rgba(20, 6, 2, 0.55);
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+
+.zone:hover .arrow {
+  color: rgba(20, 6, 2, 0.85);
+}
+
+/* Photo frame — fixed bounding box, image shows at natural ratio */
+.frame {
+  position: relative;
+  height: 88vh;
+  width: 52vw;
+}
+
+.photo {
+  object-fit: contain;
+  object-position: center;
+  transition: opacity 0.15s ease;
+}
+
+.photoActive {
+  opacity: 1;
+}
+
+.photoInactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Title — fixed to bottom left */
+.title {
+  position: fixed;
+  bottom: 40px;
+  left: 48px;
+  max-width: 160px;
+  pointer-events: none;
+}
+
+.titleMain {
+  font-family: var(--font-inter);
+  font-size: clamp(20px, 1.8vw, 30px);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(20, 6, 2, 0.82);
+  margin: 0 0 2px;
+  line-height: 1;
+}
+
+.titleSub {
+  font-family: var(--font-inter);
+  font-size: clamp(20px, 1.8vw, 30px);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(20, 6, 2, 0.82);
+  margin: 0;
+  line-height: 1;
+}

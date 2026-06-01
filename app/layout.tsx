@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Inter_Tight, Playfair_Display, Anton, Cormorant_Garamond } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -11,11 +11,33 @@ const inter = Inter({
   display: 'swap',
 })
 
+const interTight = Inter_Tight({
+  variable: '--font-inter-tight',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700', '900'],
+  display: 'swap',
+})
+
+const anton = Anton({
+  variable: '--font-anton',
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+})
+
 const playfair = Playfair_Display({
   variable: '--font-playfair',
   subsets: ['latin'],
-  style: ['normal'],
-  weight: ['400'],
+  style: ['normal', 'italic'],
+  weight: ['400', '700'],
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  variable: '--font-cormorant',
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  weight: ['300', '400', '600'],
   display: 'swap',
 })
 
@@ -85,7 +107,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <body className={`${inter.variable} ${interTight.variable} ${playfair.variable} ${anton.variable} ${cormorant.variable} antialiased`}>
           <Nav />
           {children}
           <Footer />

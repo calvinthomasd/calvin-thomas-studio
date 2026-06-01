@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import styles from './Footer.module.css'
 
 const links = [
@@ -10,13 +13,16 @@ const links = [
 ]
 
 export default function Footer() {
+  const pathname = usePathname()
+  if (pathname === '/family') return null
+
   return (
     <footer className={styles.footer}>
       <div className={styles.body}>
         <div className={styles.wordmark}>
-          <span className={styles.word}>Calvin</span>
-          <span className={styles.word}>Thomas</span>
-          <span className={styles.word}>Studio</span>
+          <span className={styles.word}>CALVIN</span>
+          <span className={`${styles.word} ${styles.wordThomas}`}>THOMAS</span>
+          <span className={styles.word}>STUDIO<span className={styles.dot}>.</span></span>
         </div>
 
         <div className={styles.contact}>

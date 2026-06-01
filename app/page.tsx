@@ -1,9 +1,12 @@
-import Hero from '@/components/Hero'
+import HeroV2 from '@/components/HeroV2'
+import Tagline from '@/components/Tagline'
 import Gallery from '@/components/Gallery'
 import ReviewBanner from '@/components/ReviewBanner'
 import Mission from '@/components/Mission'
 import About from '@/components/About'
 import Portfolios from '@/components/Portfolios'
+import BookingCTA from '@/components/BookingCTA'
+import Testimonials from '@/components/Testimonials'
 
 
 export default function Home() {
@@ -45,12 +48,15 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main>
-        <Hero />
+        <HeroV2 />
+        <Tagline />
         <Gallery />
-        <ReviewBanner />
         <Mission />
+        <ReviewBanner />
+        <Testimonials />
         <About />
         <Portfolios />
+        <BookingCTA />
       </main>
     </>
   )

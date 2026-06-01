@@ -1,7 +1,7 @@
 .footer {
   background: #0e0e0d;
-  padding: 80px 32px 48px;
-  font-family: var(--font-inter);
+  padding: 80px 48px 48px;
+  font-family: var(--font-inter-tight);
 }
 
 /* ─── Body row ─── */
@@ -20,11 +20,20 @@
 
 .word {
   display: block;
-  font-size: clamp(72px, 10.5vw, 180px);
-  font-weight: 800;
-  line-height: 0.87;
-  letter-spacing: -0.04em;
-  color: #e9e6dd;
+  font-family: var(--font-anton);
+  font-size: clamp(60px, 11vw, 180px);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.wordThomas {
+  font-size: clamp(48px, 8.8vw, 153px);
+}
+
+.dot {
+  color: #E3242B;
 }
 
 /* ─── Contact ─── */
@@ -39,25 +48,27 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #e9e6dd;
+  background: #ffffff;
   opacity: 0.35;
   margin-bottom: 16px;
 }
 
 .contactLabel {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #6b6b68;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .contactEmail {
+  font-family: var(--font-playfair);
   font-size: clamp(22px, 2.8vw, 44px);
-  font-weight: 300;
-  letter-spacing: -0.02em;
-  color: #e9e6dd;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ffffff;
   line-height: 1.1;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -80,10 +91,11 @@
 }
 
 .copy {
-  font-size: 0.8125rem;
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.01em;
-  color: #6b6b68;
+  letter-spacing: 0.08em;
+  color: #ffffff;
 }
 
 .nav {
@@ -95,10 +107,12 @@
 }
 
 .link {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  color: rgba(235, 235, 234, 0.45);
-  letter-spacing: 0.01em;
+  font-family: var(--font-inter-tight);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 3px;
@@ -107,8 +121,8 @@
 }
 
 .link:hover {
-  color: #e9e6dd;
-  text-decoration-color: #e9e6dd;
+  color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 
 /* ─── Responsive ─── */

@@ -26,6 +26,20 @@
   overflow: hidden;
   width: 100%;
   aspect-ratio: 3/4;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.revealed .imageWrapper {
+  animation: imgReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes imgReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .image {

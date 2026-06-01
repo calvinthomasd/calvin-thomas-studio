@@ -2,19 +2,23 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import styles from './Nav.module.css'
 
 const links = [
-  { label: 'Professionals', href: '#professionals' },
-  { label: 'Actors', href: '#actors' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#about' },
-  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Professionals', href: '/professionals' },
+  { label: 'Actors', href: '/actors' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
+  { label: 'Testimonials', href: '/testimonials' },
 ]
 
 export default function Nav() {
+  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  if (pathname === '/family') return null
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -30,8 +34,8 @@ export default function Nav() {
   return (
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-        <Link href="/" className={styles.brand}>
-          CTS
+        <Link href="/" className={styles.brand} aria-label="Calvin Thomas Studio, home">
+          CTS<span className={styles.brandSquare} aria-hidden="true" />
         </Link>
 
         <nav className={styles.navCenter}>
@@ -43,7 +47,7 @@ export default function Nav() {
         </nav>
 
         <div className={styles.navRight}>
-          <Link href="#bookings" className={styles.cta}>
+          <Link href="/bookings" className={styles.cta}>
             Bookings
           </Link>
           <a
@@ -53,7 +57,7 @@ export default function Nav() {
             className={styles.instagram}
             aria-label="Instagram"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
