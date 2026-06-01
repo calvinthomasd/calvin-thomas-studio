@@ -143,7 +143,6 @@ export default function ActorPricing() {
           THE EXPERIENCE<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Experience</p>
           <div className={styles.altBodyText}>
             <p>Every actor headshot session is relaxed, creative, and collaborative. We shoot in our home studio in Toronto&apos;s west end, a 100-year-old building with a warm, inviting atmosphere. Music is always playing, the vibe is stress-free, and you&apos;ll feel comfortable in front of the camera within minutes. We only photograph one actor per day, so you&apos;re never rushed and the session is entirely about you.</p>
             <p>Together we&apos;ll explore a variety of looks by changing wardrobe, lighting, and backgrounds, building a well-rounded portfolio that shows your range. Whether you&apos;re going for a classic commercial look, a dramatic theatrical feel, or a mix of both, we&apos;ll tailor the session around what you need.</p>
@@ -158,7 +157,6 @@ export default function ActorPricing() {
           AFTER THE SHOOT<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Post Session</p>
           <div className={styles.altBodyText}>
             <p>Within one week, you&apos;ll receive a secure online gallery containing every image from your session. All photos are included in your session fee, unwatermarked, high-resolution, and yours to keep forever. You can share them freely with friends, family, agents, or managers to help you choose your favourites. Many of our clients find their proof gallery is strong enough to use right away, even before retouching.</p>
             <p>There&apos;s no pressure to pick your final selections quickly. Take your time, and if you&apos;d like a second opinion, we&apos;re always happy to help you choose the headshots that will work hardest for you.</p>
@@ -172,7 +170,6 @@ export default function ActorPricing() {
           WHAT IS RETOUCHING<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Retouching</p>
           <div className={styles.altBodyText}>
             <p>Every session includes professional retouching on your selected images. Retouching isn&apos;t about making you look airbrushed or artificial. It&apos;s about subtle refinements that bring out your best while keeping you completely recognizable.</p>
             <p>If you wake up with a blemish or notice minor skin texture concerns on the morning of your shoot, don&apos;t worry. It can be removed with a simple brush stroke. We&apos;ll also clean up flyaway hairs and balance lighting where needed, all while keeping everything authentic and casting-ready. We&apos;ll go back and forth on each image until it&apos;s exactly right.</p>
@@ -186,7 +183,6 @@ export default function ActorPricing() {
           DELIVERY OF FINAL IMAGES<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Delivery</p>
           <div className={styles.altBodyText}>
             <p>Once you&apos;ve made your selections, your final retouched headshots will be delivered digitally within one week. Each image comes in two versions: a print-resolution file and a web-optimized version sized perfectly for IMDb, Mandy, Casting Workbook, Backstage, social media, and personal websites. We archive all your files indefinitely, so if you ever lose them or need them years later, we&apos;ve got you covered.</p>
           </div>

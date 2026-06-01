@@ -54,4 +54,8 @@
   .mission {
     padding: 60px 28px 72px;
   }
+
+  .statement {
+    font-size: 32px;
+  }
 }

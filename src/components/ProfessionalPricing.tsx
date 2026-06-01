@@ -163,7 +163,6 @@ export default function ProfessionalPricing() {
           THE EXPERIENCE<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Experience</p>
           <div className={styles.altBodyText}>
             <p>Every headshot session is relaxed, creative, and collaborative. We shoot in our home studio in Toronto&apos;s west end, a 100-year-old building with a warm, inviting atmosphere. Music is always playing, the vibe is stress-free, and you&apos;ll feel comfortable in front of the camera within minutes. We&apos;re never rushed, allowing us to take the time to warm up and ease into your session.</p>
             <p>Together we&apos;ll explore a variety of looks by changing wardrobe, lighting, and backgrounds. If your company already has a style in place, we&apos;re happy to match it. Before we start shooting, we take the time to understand exactly what you&apos;re aiming for and tailor the lighting and approach to suit.</p>
@@ -178,7 +177,6 @@ export default function ProfessionalPricing() {
           AFTER THE SHOOT<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Post Session</p>
           <div className={styles.altBodyText}>
             <p>Within one week, you&apos;ll receive a secure online gallery containing every image from your session. All photos are included in your session fee, unwatermarked, high-resolution, and yours to keep forever. You can share them freely with friends, family, or colleagues to help you choose your favourites. Many of our clients find their proof gallery is strong enough to use right away, even before retouching.</p>
             <p>There&apos;s no pressure to pick your final selections quickly. Take your time, and if you&apos;d like a second opinion, we&apos;re always happy to help you choose the headshots that will work hardest for you.</p>
@@ -192,7 +190,6 @@ export default function ProfessionalPricing() {
           WHAT IS RETOUCHING<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Retouching</p>
           <div className={styles.altBodyText}>
             <p>Every session includes professional retouching on your selected images. Retouching isn&apos;t about making you look airbrushed or artificial. It&apos;s about subtle refinements that bring out your best while keeping you completely recognizable.</p>
             <p>If you wake up with a blemish or notice minor skin texture concerns on the morning of your shoot, don&apos;t worry. It can be removed with a simple brush stroke. We&apos;ll also clean up flyaway hairs and balance lighting where needed, all while keeping everything authentic. We&apos;ll go back and forth on each image until it&apos;s exactly right.</p>
@@ -206,7 +203,6 @@ export default function ProfessionalPricing() {
           DELIVERY OF FINAL IMAGES<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBody}>
-          <p className={styles.altBodyLabel}>Delivery</p>
           <div className={styles.altBodyText}>
             <p>Once you&apos;ve made your selections, your final retouched headshots will be delivered digitally within one week. Each image comes in three versions: a print-resolution file, a web-optimized version, and a LinkedIn/socials avatar sized perfectly to update your online profiles. We archive all your files indefinitely, so if you ever lose them or need them years later, we&apos;ve got you covered.</p>
           </div>

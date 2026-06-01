@@ -157,6 +157,10 @@
   gap: 20px;
 }
 
+.altBody > .altBodyText:only-child {
+  grid-column: 2;
+}
+
 .altBodyText p {
   font-family: var(--font-playfair);
   font-size: clamp(17px, 1.4vw, 22px);

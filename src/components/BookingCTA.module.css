@@ -80,4 +80,8 @@
   .section {
     padding: 72px 24px 80px;
   }
+
+  .ctaArrow {
+    display: none;
+  }
 }

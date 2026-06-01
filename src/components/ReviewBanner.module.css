@@ -60,7 +60,17 @@
     padding: 60px 28px;
   }
 
+  .heading {
+    font-size: clamp(72px, 16vw, 180px);
+  }
+
   .bottomRow {
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cta {
+    transform: none;
   }
 }

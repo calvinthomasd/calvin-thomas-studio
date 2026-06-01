@@ -104,15 +104,15 @@
   .text {
     order: -1;
     justify-content: flex-start;
-    padding: 48px 24px 32px;
+    padding: 48px 16px 32px;
   }
 
   .headline {
-    font-size: clamp(80px, 22vw, 140px);
+    font-size: clamp(80px, 36vw, 140px);
   }
 
   .headlineWordThomas {
-    font-size: clamp(66px, 18.2vw, 116px);
+    font-size: clamp(66px, 29.8vw, 116px);
   }
 
   .photoFrame {
