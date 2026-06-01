@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 
 const LAT = 43.6525
 const LNG = -79.4354
-const API_KEY = 'AIzaSyBdF4k3Zbgzzf-s1YkUP7r_S1i7vwkQRHw'
+const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
 
 const PIN_SVG = `
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="44" viewBox="0 0 32 44">
@@ -53,7 +53,7 @@ export default function StudioMap() {
     if (!document.getElementById(scriptId)) {
       const script = document.createElement('script')
       script.id = scriptId
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}`
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY ?? ''}`
       script.async = true
       script.onload = init
       document.head.appendChild(script)
