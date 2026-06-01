@@ -1,6 +1,6 @@
 .page {
   background: #ffffff;
-  padding: 100px 48px 140px;
+  padding: 50px 48px 140px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -29,6 +29,10 @@
   overflow: hidden;
   border-top: 1px solid rgba(14, 14, 13, 0.1);
   border-bottom: 1px solid rgba(14, 14, 13, 0.1);
+}
+
+.altSection:last-child {
+  border-bottom: none;
 }
 
 .altSection:first-child {
@@ -100,7 +104,8 @@
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #E3242B;
+  color: #ffffff;
+  background: #E3242B;
   border: 1px solid #E3242B;
   padding: 12px 20px;
   text-decoration: none;
@@ -108,8 +113,8 @@
 }
 
 .cta:hover {
-  background: #E3242B;
-  color: #ffffff;
+  background: transparent;
+  color: #E3242B;
 }
 
 .ctaArrow {
