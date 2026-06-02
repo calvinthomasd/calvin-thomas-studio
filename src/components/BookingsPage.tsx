@@ -1,5 +1,4 @@
 import styles from './BookingsPage.module.css'
-import StudioMap from './StudioMap'
 
 export default function BookingsPage() {
   return (
@@ -36,7 +35,16 @@ export default function BookingsPage() {
           <div className={styles.altBodyText}>
             <p>Located at Dundas St W &amp; Dufferin Ave, Toronto. Sessions are by appointment only.</p>
             <div className={styles.mapWrap}>
-              <StudioMap />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0!2d-79.4354!3d43.6525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b4e1fa8e5b%3A0x1!2sDundas+St+W+%26+Dufferin+St%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Calvin Thomas Studio location"
+              />
             </div>
           </div>
         </div>
