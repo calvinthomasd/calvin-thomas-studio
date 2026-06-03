@@ -145,11 +145,15 @@
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
   .section {
-    padding: 60px 24px 72px;
+    padding: 60px 24px 40px;
   }
 
   .grid {
     grid-template-columns: 1fr;
     gap: 48px;
+  }
+
+  .description {
+    display: none;
   }
 }

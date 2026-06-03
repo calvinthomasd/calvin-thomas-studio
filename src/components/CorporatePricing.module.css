@@ -79,6 +79,10 @@
   border-bottom: 1px solid rgba(14, 14, 13, 0.1);
 }
 
+.altSection:last-child {
+  border-bottom: none;
+}
+
 .altHeading {
   font-family: var(--font-anton);
   font-size: clamp(40px, 5.5vw, 96px);
@@ -112,6 +116,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.altBody > .altBodyText:only-child {
+  grid-column: 2;
 }
 
 .altBodyText p {
@@ -231,6 +239,22 @@
   color: #0e0e0d;
 }
 
+/* ─── Email link ─── */
+.email {
+  font-family: var(--font-playfair);
+  font-size: clamp(17px, 1.4vw, 22px);
+  font-weight: 400;
+  color: #0e0e0d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14, 14, 13, 0.3);
+  padding-bottom: 2px;
+  transition: border-color 0.18s ease;
+}
+
+.email:hover {
+  border-color: #0e0e0d;
+}
+
 /* ─── Logo grid ─── */
 .logoGrid {
   display: flex;
@@ -280,6 +304,15 @@
 @media (max-width: 768px) {
   .page {
     padding: 72px 24px 100px;
+  }
+
+  .altHeroSection {
+    margin: -72px -24px 0;
+    width: calc(100% + 48px);
+  }
+
+  .altHeroLeft {
+    padding: 40px 24px 48px;
   }
 
   .altSection {

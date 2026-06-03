@@ -128,13 +128,26 @@
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
   .footer {
-    padding: 60px 20px 40px;
+    padding: 56px 24px 40px;
   }
 
   .body {
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+  }
+
+  .word {
+    font-size: clamp(52px, 14vw, 100px);
+  }
+
+  .wordThomas {
+    font-size: clamp(43px, 11.6vw, 83px);
+  }
+
+  .contactDot {
+    display: none;
   }
 
   .contactEmail {
@@ -144,10 +157,17 @@
   .bar {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
   }
 
   .nav {
-    justify-content: flex-start;
-    gap: 0.25rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 12px 24px;
+  }
+
+  .copy {
+    font-size: 12px;
   }
 }

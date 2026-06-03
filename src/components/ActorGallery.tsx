@@ -261,6 +261,22 @@ const images: { src: string; alt: string }[] = [
     src: '/actor-gallery/theatrical-actor-headshot-close-crop-expressive.jpg',
     alt: 'Theatrical actor headshot close crop expressive',
   },
+  {
+    src: '/actor-gallery/toronto-actor-headshot-warm-studio-confident.jpg',
+    alt: 'Toronto actor headshot warm studio confident',
+  },
+  {
+    src: '/actor-gallery/theatrical-headshot-actress-dramatic-close-crop.jpg',
+    alt: 'Theatrical headshot actress dramatic close crop',
+  },
+  {
+    src: '/actor-gallery/actor-casting-headshot-natural-expression-toronto.jpg',
+    alt: 'Actor casting headshot natural expression Toronto',
+  },
+  {
+    src: '/actor-gallery/toronto-actor-headshot-studio-natural-warm-tones.jpg',
+    alt: 'Toronto actor headshot studio natural warm tones',
+  },
 ]
 
 export default function ActorGallery() {

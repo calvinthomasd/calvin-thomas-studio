@@ -69,6 +69,12 @@
   .row {
     grid-template-columns: 1fr;
     min-height: unset;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .row:last-child {
+    border-bottom: none;
   }
 
   .meta {

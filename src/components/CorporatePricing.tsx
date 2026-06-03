@@ -8,7 +8,7 @@ export default function CorporatePricing() {
       {/* Hero */}
       <section className={styles.altHeroSection}>
         <div className={styles.altHeroLeft}>
-          <p className={styles.altLabel}>In Office Corporate Headshot Photography &middot; Toronto</p>
+          <p className={styles.altLabel}>In Office Company Headshot Photography</p>
           <h1 className={styles.altHeroHeading}>
             CORPORATE &amp; TEAM HEADSHOTS<span className={styles.dot}>.</span>
           </h1>
@@ -119,15 +119,21 @@ export default function CorporatePricing() {
         <footer className={styles.pullQuoteAttrib}>— Lorem Ipsum, Company Name</footer>
       </blockquote>
 
-      {/* Team gallery 2 */}
+      {/* Team gallery 2 — 12 images */}
       <section className={styles.teamGallery}>
         {[
-          { src: '/corp-gallery/toronto-corporate-headshot-woman-confident-studio.jpg', alt: 'Toronto corporate headshot woman confident studio' },
-          { src: '/corp-gallery/executive-headshot-man-navy-suit-clean-backdrop.jpg', alt: 'Executive headshot man navy suit clean backdrop' },
-          { src: '/corp-gallery/professional-portrait-woman-natural-light-toronto.jpg', alt: 'Professional portrait woman natural light Toronto' },
-          { src: '/corp-gallery/corporate-headshot-man-open-collar-modern.jpg', alt: 'Corporate headshot man open collar modern' },
-          { src: '/corp-gallery/toronto-executive-headshot-woman-editorial-warm.jpg', alt: 'Toronto executive headshot woman editorial warm' },
-          { src: '/corp-gallery/business-professional-headshot-man-grey-background.jpg', alt: 'Business professional headshot man grey background' },
+          { src: '/corp-gallery/toronto-corporate-headshot-woman-pearl-earrings-polished.jpg', alt: 'Toronto corporate headshot woman pearl earrings polished' },
+          { src: '/corp-gallery/executive-portrait-man-charcoal-blazer-studio.jpg', alt: 'Executive portrait man charcoal blazer studio' },
+          { src: '/corp-gallery/professional-headshot-woman-glasses-approachable-toronto.jpg', alt: 'Professional headshot woman glasses approachable Toronto' },
+          { src: '/corp-gallery/corporate-headshot-man-white-shirt-minimal-backdrop.jpg', alt: 'Corporate headshot man white shirt minimal backdrop' },
+          { src: '/corp-gallery/toronto-business-headshot-woman-side-profile-elegant.jpg', alt: 'Toronto business headshot woman side profile elegant' },
+          { src: '/corp-gallery/executive-headshot-man-confident-smile-warm-light.jpg', alt: 'Executive headshot man confident smile warm light' },
+          { src: '/corp-gallery/professional-portrait-woman-black-blazer-toronto-studio.jpg', alt: 'Professional portrait woman black blazer Toronto studio' },
+          { src: '/corp-gallery/corporate-headshot-man-beard-modern-professional.jpg', alt: 'Corporate headshot man beard modern professional' },
+          { src: '/corp-gallery/toronto-executive-headshot-woman-cream-blouse-natural.jpg', alt: 'Toronto executive headshot woman cream blouse natural' },
+          { src: '/corp-gallery/business-portrait-man-three-quarter-studio-light.jpg', alt: 'Business portrait man three quarter studio light' },
+          { src: '/corp-gallery/professional-headshot-woman-relaxed-expression-toronto.jpg', alt: 'Professional headshot woman relaxed expression Toronto' },
+          { src: '/corp-gallery/corporate-headshot-man-tie-formal-dark-backdrop.jpg', alt: 'Corporate headshot man tie formal dark backdrop' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
             <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.teamGalleryImage} />
@@ -178,21 +184,15 @@ export default function CorporatePricing() {
         </div>
       </section>
 
-      {/* Team gallery 3 */}
+      {/* Team gallery 3 — 6 images */}
       <section className={styles.teamGallery}>
         {[
-          { src: '/corp-gallery/toronto-corporate-headshot-woman-pearl-earrings-polished.jpg', alt: 'Toronto corporate headshot woman pearl earrings polished' },
-          { src: '/corp-gallery/executive-portrait-man-charcoal-blazer-studio.jpg', alt: 'Executive portrait man charcoal blazer studio' },
-          { src: '/corp-gallery/professional-headshot-woman-glasses-approachable-toronto.jpg', alt: 'Professional headshot woman glasses approachable Toronto' },
-          { src: '/corp-gallery/corporate-headshot-man-white-shirt-minimal-backdrop.jpg', alt: 'Corporate headshot man white shirt minimal backdrop' },
-          { src: '/corp-gallery/toronto-business-headshot-woman-side-profile-elegant.jpg', alt: 'Toronto business headshot woman side profile elegant' },
-          { src: '/corp-gallery/executive-headshot-man-confident-smile-warm-light.jpg', alt: 'Executive headshot man confident smile warm light' },
-          { src: '/corp-gallery/professional-portrait-woman-black-blazer-toronto-studio.jpg', alt: 'Professional portrait woman black blazer Toronto studio' },
-          { src: '/corp-gallery/corporate-headshot-man-beard-modern-professional.jpg', alt: 'Corporate headshot man beard modern professional' },
-          { src: '/corp-gallery/toronto-executive-headshot-woman-cream-blouse-natural.jpg', alt: 'Toronto executive headshot woman cream blouse natural' },
-          { src: '/corp-gallery/business-portrait-man-three-quarter-studio-light.jpg', alt: 'Business portrait man three quarter studio light' },
-          { src: '/corp-gallery/professional-headshot-woman-relaxed-expression-toronto.jpg', alt: 'Professional headshot woman relaxed expression Toronto' },
-          { src: '/corp-gallery/corporate-headshot-man-tie-formal-dark-backdrop.jpg', alt: 'Corporate headshot man tie formal dark backdrop' },
+          { src: '/corp-gallery/toronto-corporate-headshot-woman-confident-studio.jpg', alt: 'Toronto corporate headshot woman confident studio' },
+          { src: '/corp-gallery/executive-headshot-man-navy-suit-clean-backdrop.jpg', alt: 'Executive headshot man navy suit clean backdrop' },
+          { src: '/corp-gallery/professional-portrait-woman-natural-light-toronto.jpg', alt: 'Professional portrait woman natural light Toronto' },
+          { src: '/corp-gallery/corporate-headshot-man-open-collar-modern.jpg', alt: 'Corporate headshot man open collar modern' },
+          { src: '/corp-gallery/toronto-executive-headshot-woman-editorial-warm.jpg', alt: 'Toronto executive headshot woman editorial warm' },
+          { src: '/corp-gallery/business-professional-headshot-man-grey-background.jpg', alt: 'Business professional headshot man grey background' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
             <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.teamGalleryImage} />
@@ -352,6 +352,21 @@ export default function CorporatePricing() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Request a Quote */}
+      <section className={styles.altSection}>
+        <h2 className={styles.altHeading}>
+          REQUEST A QUOTE<span className={styles.dot}>.</span>
+        </h2>
+        <div className={styles.altBody}>
+          <div className={styles.altBodyText}>
+            <p>Send us an email and tell us a little about you, your company, and what you&apos;re looking to have done. Let us know the approximate number of people, your preferred dates, and whether you&apos;d like us to come to your office or shoot at our Toronto studio. We&apos;ll get back to you within 24 hours with a custom quote.</p>
+            <a href="mailto:info@calvinthomas.ca" className={styles.email}>
+              info@calvinthomas.ca
+            </a>
           </div>
         </div>
       </section>

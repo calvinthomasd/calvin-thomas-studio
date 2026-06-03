@@ -258,6 +258,15 @@
     padding: 72px 24px 100px;
   }
 
+  .altHeroSection {
+    margin: -72px -24px 0;
+    width: calc(100% + 48px);
+  }
+
+  .altHeroLeft {
+    padding: 40px 24px 48px;
+  }
+
   .altSection {
     margin: 0 -24px;
     padding: 56px 24px 64px;

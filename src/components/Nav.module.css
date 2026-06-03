@@ -150,11 +150,13 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .mobileLink {
   font-family: var(--font-inter-tight);
-  font-size: clamp(18px, 5vw, 28px);
+  font-size: clamp(15px, 4vw, 22px);
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
