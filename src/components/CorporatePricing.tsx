@@ -115,8 +115,9 @@ export default function CorporatePricing() {
 
       {/* Pull quote */}
       <blockquote className={styles.pullQuote}>
-        <p className={styles.pullQuoteText}>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&rdquo;</p>
-        <footer className={styles.pullQuoteAttrib}>— Lorem Ipsum, Company Name</footer>
+        <p className={styles.pullQuoteText}>&ldquo;Working with Calvin and his incredible team over the past four years has been nothing short of outstanding. As a marketing team within a full‑service business law firm, we rely heavily on partners who understand professionalism, consistency, and the importance of making our people feel at ease. Calvin delivers all of that and more.</p>
+        <p className={styles.pullQuoteText}>The quality of the work speaks for itself, but what truly sets Calvin apart is his reliability. Turnaround times are always quick, communication is seamless, and the experience is smooth from start to finish. He has become an invaluable asset to our marketing efforts, and we can&apos;t imagine working without him.&rdquo;</p>
+        <footer className={styles.pullQuoteAttrib}>— Lindsay Everitt, Chief Marketing Officer, Goodmans LLP</footer>
       </blockquote>
 
       {/* Team gallery 2 — 12 images */}
@@ -149,34 +150,34 @@ export default function CorporatePricing() {
         <div className={styles.altBody}>
           <p className={styles.altBodyLabel}>Process</p>
           <div className={styles.altBodyText}>
-            <p>We keep the process efficient and seamless, with minimal disruption to your team&apos;s day. Each person has a 10&ndash;15 minute session, during which we capture a range of expressions and poses. We shoot directly into a computer, allowing for real-time review and adjustments so that everyone leaves confident in their results.</p>
+            <p>We keep the process efficient and seamless, with minimal disruption to your team&apos;s schedule. Each person gets a short, focused session, and we shoot tethered to a computer so everyone can see the results in real time.</p>
             <ol className={styles.numberedList}>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[01]</span>
                 <div className={styles.numberedContent}>
-                  <strong className={styles.numberedTitle}>10&ndash;15 minutes per person.</strong>
-                  <span className={styles.numberedDesc}>Each session is efficient by design, capturing a range of expressions and poses without rushing anyone.</span>
+                  <strong className={styles.numberedTitle}>10 to 15 minutes per person.</strong>
+                  <span className={styles.numberedDesc}>That&apos;s all it takes. Each session is designed to give people enough time to relax, warm up, and forget they&apos;re being photographed. We typically capture 25 to 50 images per person, giving you plenty to choose from.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[02]</span>
                 <div className={styles.numberedContent}>
                   <strong className={styles.numberedTitle}>Multiple looks captured.</strong>
-                  <span className={styles.numberedDesc}>We shoot a variety of expressions and angles so everyone has real options to choose from.</span>
+                  <span className={styles.numberedDesc}>We shoot a variety of expressions and angles so everyone walks away knowing we captured their best side.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[03]</span>
                 <div className={styles.numberedContent}>
                   <strong className={styles.numberedTitle}>Real-time review.</strong>
-                  <span className={styles.numberedDesc}>Images are displayed on-screen as we shoot, so adjustments happen in the moment and everyone leaves confident.</span>
+                  <span className={styles.numberedDesc}>Images are displayed on screen as we shoot. Adjustments happen in the moment, and no one leaves wondering if we got the shot.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[04]</span>
                 <div className={styles.numberedContent}>
-                  <strong className={styles.numberedTitle}>Minimal disruption.</strong>
-                  <span className={styles.numberedDesc}>We can help with scheduling and sign-up sheets in advance so no one&apos;s waiting around. Your team shows up at their slot, shoots, and gets right back to their day.</span>
+                  <strong className={styles.numberedTitle}>On time, every time.</strong>
+                  <span className={styles.numberedDesc}>We help with scheduling and sign-up sheets in advance so no one&apos;s waiting around. Your team shows up at their slot, shoots, and gets right back to their day.</span>
                 </div>
               </li>
             </ol>
@@ -227,7 +228,7 @@ export default function CorporatePricing() {
                 <span className={styles.numberedIndex}>[02]</span>
                 <div className={styles.numberedContent}>
                   <strong className={styles.numberedTitle}>Included retouching.</strong>
-                  <span className={styles.numberedDesc}>One fully retouched, high-resolution image per person. Covers hair flyaways, blemishes, and light clothing adjustments.</span>
+                  <span className={styles.numberedDesc}>One fully retouched, high-resolution image per person.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
@@ -241,7 +242,7 @@ export default function CorporatePricing() {
                 <span className={styles.numberedIndex}>[04]</span>
                 <div className={styles.numberedContent}>
                   <strong className={styles.numberedTitle}>Timeline.</strong>
-                  <span className={styles.numberedDesc}>Proof galleries delivered within 3&ndash;5 business days. Final edits within 1 week of selection. If you&apos;re on a tight deadline, rush turnaround is available for an additional fee.</span>
+                  <span className={styles.numberedDesc}>Proof galleries delivered within a week of the shoot. Final edits within 2 weeks of selection. If you&apos;re on a tight deadline, rush turnaround is available for an additional fee.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
@@ -264,34 +265,34 @@ export default function CorporatePricing() {
         <div className={styles.altBody}>
           <p className={styles.altBodyLabel}>Resources</p>
           <div className={styles.altBodyText}>
-            <p>We provide everything you need to make the process simple:</p>
+            <p>We handle the logistics so you don&apos;t have to.</p>
             <ol className={styles.numberedList}>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[01]</span>
                 <div className={styles.numberedContent}>
                   <strong className={styles.numberedTitle}>Team prep guides.</strong>
-                  <span className={styles.numberedDesc}>Wardrobe tips and scheduling details sent to your team in advance so everyone shows up ready.</span>
+                  <span className={styles.numberedDesc}>Wardrobe tips, what to expect, and day-of details sent to your team ahead of time. Everyone shows up knowing exactly what to do.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[02]</span>
                 <div className={styles.numberedContent}>
-                  <strong className={styles.numberedTitle}>Sign-up documents.</strong>
-                  <span className={styles.numberedDesc}>Self-scheduling templates so team members can book their own slot without back-and-forth.</span>
+                  <strong className={styles.numberedTitle}>Self-scheduling.</strong>
+                  <span className={styles.numberedDesc}>We provide sign-up templates so team members can book their own time slot. No back-and-forth, no admin headaches on your end.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[03]</span>
                 <div className={styles.numberedContent}>
-                  <strong className={styles.numberedTitle}>Hair &amp; makeup.</strong>
-                  <span className={styles.numberedDesc}>Optional on-site hair and makeup services for a polished, camera-ready finish.</span>
+                  <strong className={styles.numberedTitle}>On-site hair and makeup.</strong>
+                  <span className={styles.numberedDesc}>Optional professional hair and makeup available on the day. A popular add-on for leadership teams and client-facing roles.</span>
                 </div>
               </li>
               <li className={styles.numberedItem}>
                 <span className={styles.numberedIndex}>[04]</span>
                 <div className={styles.numberedContent}>
-                  <strong className={styles.numberedTitle}>Studio shoots.</strong>
-                  <span className={styles.numberedDesc}>When you hire someone new, they can easily book a one-off session in our studio at their convenience.</span>
+                  <strong className={styles.numberedTitle}>New hires, covered.</strong>
+                  <span className={styles.numberedDesc}>When you bring someone new on board, they can book a one-off session at our Toronto studio anytime. Same style, same quality, seamless match with the rest of your team.</span>
                 </div>
               </li>
             </ol>
@@ -341,14 +342,14 @@ export default function CorporatePricing() {
                 { src: '/corp-logos/Osler,_Hoskin_&_Harcourt_Logo.svg.png', alt: 'Osler Hoskin & Harcourt', w: 3840, h: 1079 },
                 { src: '/corp-logos/CIBC_logo_2021.svg.png',               alt: 'CIBC',                   w: 1280, h: 325  },
                 { src: '/corp-logos/BCG_MONOGRAM.png',                     alt: 'BCG',                    w: 801,  h: 321  },
-                { src: '/corp-logos/Adair-Goldblatt-Bieber-Logo.jpg',      alt: 'Adair Goldblatt Bieber', w: 486,  h: 486  },
                 { src: '/corp-logos/aird-berlis-logo.png',                 alt: 'Aird Berlis',            w: 336,  h: 85   },
-                { src: '/corp-logos/StrategyCorp-Logo-e1573222091350.png', alt: 'StrategyCorp',           w: 771,  h: 587  },
-                { src: '/corp-logos/ay_logos_black-1.png.webp',            alt: 'Avison Young',           w: 700,  h: 426  },
-                { src: '/corp-logos/0348_637551846516900837.png',          alt: 'Torkin Manes',           w: 1000, h: 600  },
+                { src: '/corp-logos/StrategyCorp-Logo-e1573222091350.png', alt: 'StrategyCorp',           w: 771,  h: 587,  displayH: 70 },
+                { src: '/corp-logos/ay_logos_black-1.png.webp',            alt: 'Avison Young',           w: 700,  h: 426,  displayH: 60 },
+                { src: '/corp-logos/0348_637551846516900837.png',          alt: 'Torkin Manes',           w: 1000, h: 600,  displayH: 100 },
+                { src: '/corp-logos/bennett-jones-logo-toronto.png',       alt: 'Bennett Jones',          w: 900,  h: 200  },
               ].map((logo, i) => (
                 <div key={i} className={styles.logoItem}>
-                  <Image src={logo.src} alt={logo.alt} width={logo.w} height={logo.h} className={styles.logoImage} />
+                  <Image src={logo.src} alt={logo.alt} width={logo.w} height={logo.h} className={styles.logoImage} style={logo.displayH ? { height: logo.displayH } : undefined} />
                 </div>
               ))}
             </div>

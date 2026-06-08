@@ -181,6 +181,22 @@ const images: { src: string; alt: string }[] = [
     src: '/professional-gallery/business-headshot-approachable-smile.jpg',
     alt: 'Business headshot of a woman with blonde hair pulled back wearing a black turtleneck, with red lips and blue eyes, smiling confidently against a dark moody background with warm amber tones',
   },
+  {
+    src: '/actor-gallery/toronto-linkedin-headshot-woman-professional-studio.jpg',
+    alt: 'Toronto LinkedIn headshot woman professional studio',
+  },
+  {
+    src: '/actor-gallery/corporate-headshot-man-modern-backdrop-polished.jpg',
+    alt: 'Corporate headshot man modern backdrop polished',
+  },
+  {
+    src: '/actor-gallery/professional-headshot-woman-confident-natural-toronto.jpg',
+    alt: 'Professional headshot woman confident natural Toronto',
+  },
+  {
+    src: '/actor-gallery/executive-portrait-man-clean-studio-approachable.jpg',
+    alt: 'Executive portrait man clean studio approachable',
+  },
 ]
 
 export default function ProfessionalGallery() {

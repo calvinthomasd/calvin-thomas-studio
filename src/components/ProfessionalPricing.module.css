@@ -205,6 +205,8 @@
 .packageCol {
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(14, 14, 13, 0.12);
+  padding: 32px;
 }
 
 .packageCol .packageName {

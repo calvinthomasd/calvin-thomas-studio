@@ -49,7 +49,7 @@ export default function Nav() {
 
         <div className={styles.navRight}>
           <Link href="/bookings" className={styles.cta}>
-            Bookings
+            Book Now
           </Link>
           <a
             href="https://instagram.com/calvinthomasstudio"

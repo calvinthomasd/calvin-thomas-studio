@@ -8,8 +8,8 @@ const faqs = [
     a: (<><p>If the thought of being in front of a camera makes you nervous, you&apos;re in good company. Almost every client starts off feeling the same way. Our main goal is to make you feel comfortable and at ease. You don&apos;t need any experience in front of a camera. We&apos;ll focus on keeping the session fun and relaxed, and the natural, authentic shots always follow.</p><p>A lot of actors actually feel less comfortable in front of a still camera than a motion picture one. The performance is totally different, and it can feel strange at first. But you&apos;ll quickly realize there&apos;s no way to mess a photo up. We&apos;re constantly trying things, experimenting, collaborating, and laughing.</p></>),
   },
   {
-    q: 'Do you shoot in a style that casting agents like?',
-    a: (<><p>Yes. We understand what casting agents are looking for and we approach it in a modern way. Every session covers the essentials: clean, well-lit headshots that capture your range and feel current. But we also leave room for more creative, editorial-style shots that show personality beyond the traditional frame.</p><p>We use cinematic lighting and natural backgrounds to help you communicate character without anything feeling flat or distracting. Most importantly, the photos will look like you. When you walk into that self-tape, audition, or callback, the person in the room should match the person in the headshot. That&apos;s always the goal.</p></>),
+    q: "I don't want a stiff professional headshot, can I get something that feels creative?",
+    a: (<><p>We will make lighting and backdrop choices that look and feel creative. This often can mean layering backdrops, lighting that has some depth/shadow, and more relaxed posing during the session. We also encourage people to consider less formal wardrobe choices which can be a big part of what makes a photo look &ldquo;more creative&rdquo;. This can be colour, pattern, or just your favourite t-shirt. This is highly dependent on your industry and who you&apos;re looking to make an impression on.</p></>),
   },
   {
     q: 'What should I wear for a professional headshot session?',
@@ -75,14 +75,13 @@ export default function ProfessionalPricing() {
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Sessions with Gabriella */}
       <section className={styles.altSection}>
         <h2 className={styles.altHeading}>
           SESSIONS WITH GABRIELLA<span className={styles.dot}>.</span>
         </h2>
         <div className={styles.altBodyFull}>
           <div className={styles.altBodyText}>
-
             <div className={styles.packageGrid}>
               <div className={styles.packageCol}>
                 <p className={styles.packageName}>Session A</p>
@@ -121,11 +120,18 @@ export default function ProfessionalPricing() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <h2 className={styles.altHeading}>
-              SESSIONS WITH CALVIN<span className={styles.dot}>.</span>
-            </h2>
-            <div className={styles.packageGridSingle}>
+      {/* Sessions with Calvin */}
+      <section className={styles.altSection}>
+        <h2 className={styles.altHeading}>
+          SESSIONS WITH CALVIN<span className={styles.dot}>.</span>
+        </h2>
+        <div className={styles.altBodyFull}>
+          <div className={styles.altBodyText}>
+            <div className={styles.packageGrid}>
               <div className={styles.packageCol}>
                 <p className={styles.packageName}>Session C</p>
                 <p className={styles.packagePrice}><span className={styles.currency}>$</span>395</p>
@@ -139,9 +145,16 @@ export default function ProfessionalPricing() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Optional Add-ons */}
+      <section className={styles.altSection}>
+        <h2 className={styles.altHeading}>OPTIONAL ADD-ONS<span className={styles.dot}>.</span></h2>
+        <div className={styles.altBodyFull}>
+          <div className={styles.altBodyText}>
             <div className={styles.addons}>
-              <h2 className={styles.altHeading}>OPTIONAL ADD-ONS<span className={styles.dot}>.</span></h2>
               <div className={styles.addonRow}>
                 <span>Extra retouched headshot</span>
                 <span className={styles.addonPrice}>$45</span>
@@ -152,7 +165,6 @@ export default function ProfessionalPricing() {
               </div>
               <p className={styles.hst}>All rates are subject to HST</p>
             </div>
-
           </div>
         </div>
       </section>

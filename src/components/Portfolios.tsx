@@ -6,7 +6,7 @@ const items = [
   {
     index: '01',
     label: 'Professionals',
-    description: 'Corporate, LinkedIn & business headshots.',
+    description: 'Business, LinkedIn and creative headshots.',
     href: '/professionals/pricing',
     photo: '/professional-gallery/linkedin-headshot-professional-woman-studio.jpg',
     alt: 'Toronto LinkedIn headshot of a professional woman in a modern studio setting',

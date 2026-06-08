@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import styles from './Mission.module.css'
 
 const SENTENCES = [
-  'Calvin Thomas Studio is a Toronto-based headshot and portrait studio operated by Calvin and Gabi. With over 17 years of experience, we\'ve photographed thousands of faces and built a studio designed to make every session feel effortless.',
+  'Calvin Thomas Studio is a Toronto-based headshot and portrait studio independently owned by Calvin and Gabi. With 17 years of experience, we\'ve photographed thousands of faces and our sessions are designed to feel effortless.',
 ]
 
 export default function Mission() {
