@@ -7,12 +7,43 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  will-change: transform, opacity;
 }
 
-.fade {
-  opacity: 0;
+.exitNext {
+  animation: exitToLeft 0.22s ease forwards;
+}
+
+.exitPrev {
+  animation: exitToRight 0.22s ease forwards;
+}
+
+.enterNext {
+  animation: enterFromRight 0.22s ease forwards;
+}
+
+.enterPrev {
+  animation: enterFromLeft 0.22s ease forwards;
+}
+
+@keyframes exitToLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-28px); }
+}
+
+@keyframes exitToRight {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(28px); }
+}
+
+@keyframes enterFromRight {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes enterFromLeft {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 .card {

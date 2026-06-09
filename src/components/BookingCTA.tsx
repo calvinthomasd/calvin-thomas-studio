@@ -7,7 +7,7 @@ export default function BookingCTA() {
       <p className={styles.label}>Book a Session</p>
       <h2 className={styles.heading}>WE&rsquo;D LOVE TO <span className={styles.headingBold}>WORK WITH YOU<span className={styles.dot}>.</span></span></h2>
       <p className={styles.sub}>
-        Browse our packages and check availability below — sessions are relaxed, fun, and built around you.
+        Browse our packages and check our availability below. Our headshot and portrait sessions are always relaxed, fun, and built around you.
       </p>
       <Link href="https://calvin-thomas-studio-ltd.square.site" target="_blank" rel="noopener noreferrer" className={styles.cta}>
         View Calendar &amp; Book <span className={styles.ctaArrow}>↗</span>
