@@ -46,12 +46,12 @@ const faqs = [
 ]
 
 const heroImages = [
-  { src: '/professional-gallery/professional-headshot-woman-blazer-grey-backdrop.jpg', alt: 'Professional headshot woman grey backdrop' },
-  { src: '/professional-gallery/executive-portrait-polished-toronto-dark.jpg', alt: 'Polished Toronto executive portrait' },
-  { src: '/professional-gallery/toronto-corporate-portrait-natural-light.jpg', alt: 'Toronto corporate portrait natural light' },
-  { src: '/professional-gallery/corporate-headshot-man-dark-background-toronto.jpg', alt: 'Corporate headshot man dark background' },
-  { src: '/professional-gallery/linkedin-headshot-professional-woman-studio.jpg', alt: 'LinkedIn professional headshot woman' },
-  { src: '/professional-gallery/business-headshot-woman-warm-smile-studio-light.jpg', alt: 'Business headshot warm smile' },
+  { src: '/professional-gallery/professional-headshot-woman-blazer-grey-backdrop.jpg', alt: 'Toronto professional headshot of a woman in a tailored blazer against a clean grey studio backdrop' },
+  { src: '/professional-gallery/executive-portrait-polished-toronto-dark.jpg', alt: 'Polished Toronto executive portrait with a commanding and confident presence against a deep dark background' },
+  { src: '/professional-gallery/toronto-corporate-portrait-natural-light.jpg', alt: 'Toronto corporate portrait photographed in warm natural light with a relaxed and approachable expression' },
+  { src: '/professional-gallery/corporate-headshot-man-dark-background-toronto.jpg', alt: 'Toronto corporate headshot of a man against a deep dark studio background with a strong confident expression' },
+  { src: '/professional-gallery/linkedin-headshot-professional-woman-studio.jpg', alt: 'Toronto LinkedIn professional headshot of a woman in business attire against a clean studio background' },
+  { src: '/professional-gallery/business-headshot-woman-warm-smile-studio-light.jpg', alt: 'Toronto business headshot of a woman with a warm natural smile under soft studio lighting' },
 ]
 
 export default function ProfessionalPricing() {
