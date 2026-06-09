@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import HeroV2 from '@/components/HeroV2'
 import Tagline from '@/components/Tagline'
 import Gallery from '@/components/Gallery'
@@ -8,25 +9,47 @@ import Portfolios from '@/components/Portfolios'
 import BookingCTA from '@/components/BookingCTA'
 import Testimonials from '@/components/Testimonials'
 
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Calvin Thomas Studio — Toronto Headshot Photographer',
+  },
+  description:
+    'Premium headshot and portrait photography in Toronto for actors, business professionals, and corporate teams. Relaxed sessions, real results.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Calvin Thomas Studio — Toronto Headshot Photographer',
+    description:
+      'Headshots that feel real. Photos that get you noticed. Premium portrait photography in Toronto.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Calvin Thomas Studio' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calvin Thomas Studio — Toronto Headshot Photographer',
+    description:
+      'Headshots that feel real. Photos that get you noticed. Premium portrait photography in Toronto.',
+    images: ['/og-image.jpg'],
+  },
+}
 
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://calvinthomas.studio', // ← update to your real domain
+    '@id': 'https://calvinthomas.studio',
     name: 'Calvin Thomas Studio',
     description:
       'Premium headshot and portrait photography in Toronto for actors, business professionals, and corporate teams.',
     url: 'https://calvinthomas.studio',
-    telephone: '', // ← add your phone number
-    email: '', // ← add your email
+    email: 'info@calvinthomas.ca',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Toronto',
       addressRegion: 'ON',
       addressCountry: 'CA',
     },
-    image: '/photo1.jpg', // ← update to your best portfolio image
+    image: 'https://calvinthomas.studio/og-image.jpg',
     priceRange: '$$',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -35,9 +58,7 @@ export default function Home() {
       closes: '18:00',
     },
     sameAs: [
-      // Add your social profiles:
-      // 'https://instagram.com/calvinthomasstudio',
-      // 'https://linkedin.com/company/calvinthomasstudio',
+      'https://instagram.com/calvinthomasstudio',
     ],
   }
 

@@ -5,11 +5,13 @@ import { usePathname } from 'next/navigation'
 import styles from './Footer.module.css'
 
 const links = [
-  { label: 'Professionals', href: '#professionals' },
-  { label: 'Actors', href: '#actors' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#about' },
-  { label: 'Bookings', href: '#bookings' },
+  { label: 'Professionals', href: '/professionals' },
+  { label: 'Actors', href: '/actors' },
+  { label: 'Teams', href: '/teams' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
+  { label: 'Testimonials', href: '/testimonials' },
+  { label: 'Bookings', href: '/bookings' },
 ]
 
 export default function Footer() {
