@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Inter_Tight, Playfair_Display, Anton, Cormorant_Garamond } from 'next/font/google'
+import Script from 'next/script'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import './globals.css'
+
+const GA_ID = 'G-FTW325EGLH'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -74,15 +77,14 @@ export const metadata: Metadata = {
     title: 'Calvin Thomas Studio — Toronto Headshot Photographer',
     description:
       'Headshots that feel real. Photos that get you noticed. Premium portrait photography in Toronto.',
-    // Add your OG image path once you have one:
-    // images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Calvin Thomas Studio' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Calvin Thomas Studio' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Calvin Thomas Studio — Toronto Headshot Photographer',
     description:
       'Headshots that feel real. Photos that get you noticed. Premium portrait photography in Toronto.',
-    // image: '/og-image.jpg',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -111,6 +113,22 @@ export default function RootLayout({
           <Nav />
           {children}
           <Footer />
+          {process.env.NODE_ENV === 'production' && (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                strategy="afterInteractive"
+              />
+              <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}');
+                `}
+              </Script>
+            </>
+          )}
         </body>
     </html>
   )
