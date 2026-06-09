@@ -14,8 +14,35 @@ export const metadata = {
     description: 'On-location company headshot photography for teams and companies throughout Toronto and the GTA.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/teams',
+  },
 }
 
 export default function TeamsPage() {
-  return <CorporatePricing />
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': 'https://calvinthomas.ca/teams',
+    name: 'Corporate & Team Headshots Toronto',
+    description: 'On-location corporate headshot photography for teams and companies throughout Toronto and the GTA.',
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://calvinthomas.ca',
+      name: 'Calvin Thomas Studio',
+    },
+    areaServed: { '@type': 'City', name: 'Toronto' },
+    serviceType: 'Photography',
+    url: 'https://calvinthomas.ca/teams',
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <CorporatePricing />
+    </>
+  )
 }

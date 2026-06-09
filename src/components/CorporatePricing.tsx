@@ -201,12 +201,6 @@ export default function CorporatePricing() {
         ))}
       </section>
 
-      {/* Pull quote 2 */}
-      <blockquote className={styles.pullQuote}>
-        <p className={styles.pullQuoteText}>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.&rdquo;</p>
-        <footer className={styles.pullQuoteAttrib}>— Lorem Ipsum, Company Name</footer>
-      </blockquote>
-
       {/* After the Shoot */}
       <section className={styles.altSection}>
         <h2 className={styles.altHeading}>
@@ -299,12 +293,6 @@ export default function CorporatePricing() {
           </div>
         </div>
       </section>
-
-      {/* Pull quote 3 */}
-      <blockquote className={styles.pullQuote}>
-        <p className={styles.pullQuoteText}>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.&rdquo;</p>
-        <footer className={styles.pullQuoteAttrib}>— Lorem Ipsum, Company Name</footer>
-      </blockquote>
 
       {/* Team gallery 4 */}
       <section className={styles.teamGallery}>

@@ -76,7 +76,7 @@ export default function ActorPricing() {
         <div className={styles.heroImageWrap}>
           <Image
             src="/actor-gallery/actress-headshot-dark-background-editorial-toronto.jpg"
-            alt="Actress headshot dark background editorial Toronto"
+            alt="Editorial Toronto actress headshot — a woman with long dark hair photographed in a cinematic style against a deep black studio background"
             fill
             sizes="50vw"
             className={styles.heroImage}
@@ -96,7 +96,7 @@ export default function ActorPricing() {
             <div className={styles.packageGrid}>
               <div className={styles.packageCol}>
                 <p className={styles.packageName}>Classic Session</p>
-                <p className={styles.packagePrice}><span className={styles.currency}>$</span>495</p>
+                <p className={styles.packagePrice}><span className={styles.currency}>$</span>475</p>
                 <ul className={styles.featureList}>
                   <li>2.5 hour shoot</li>
                   <li>450+ photos (unwatermarked)</li>
@@ -108,7 +108,7 @@ export default function ActorPricing() {
               </div>
               <div className={styles.packageCol}>
                 <p className={styles.packageName}>Mini Session</p>
-                <p className={styles.packagePrice}><span className={styles.currency}>$</span>395</p>
+                <p className={styles.packagePrice}><span className={styles.currency}>$</span>375</p>
                 <ul className={styles.featureList}>
                   <li>1 hour shoot</li>
                   <li>200+ photos (unwatermarked)</li>

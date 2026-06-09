@@ -14,6 +14,9 @@ export const metadata = {
     description: 'Actor headshot session pricing at Calvin Thomas Studio in Toronto. Classic and mini session packages for casting, agents, and auditions.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/actors/pricing',
+  },
 }
 
 export default function ActorPricingPage() {

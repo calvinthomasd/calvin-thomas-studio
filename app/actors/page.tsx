@@ -15,13 +15,38 @@ export const metadata = {
     description: 'Creative, cinematic headshots and portraits for actors and performers in Toronto that feel like you.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/actors',
+  },
 }
 
 export default function ActorsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': 'https://calvinthomas.ca/actors',
+    name: 'Actor Headshots Toronto',
+    description: 'Creative, cinematic headshots and portraits for actors and performers in Toronto.',
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://calvinthomas.ca',
+      name: 'Calvin Thomas Studio',
+    },
+    areaServed: { '@type': 'City', name: 'Toronto' },
+    serviceType: 'Photography',
+    url: 'https://calvinthomas.ca/actors',
+  }
+
   return (
-    <main>
-      <ActorHero />
-      <ActorGallery />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main>
+        <ActorHero />
+        <ActorGallery />
+      </main>
+    </>
   )
 }

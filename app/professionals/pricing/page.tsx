@@ -14,6 +14,9 @@ export const metadata = {
     description: 'Professional headshot session pricing at Calvin Thomas Studio in Toronto. Packages for LinkedIn, corporate, and business portraits.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/professionals/pricing',
+  },
 }
 
 export default function ProfessionalPricingPage() {

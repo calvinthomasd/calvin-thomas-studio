@@ -14,6 +14,9 @@ export const metadata = {
     description: "Hear from clients who've worked with Calvin Thomas Studio for professional and actor headshots in Toronto.",
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/testimonials',
+  },
 }
 
 export default function Testimonials() {

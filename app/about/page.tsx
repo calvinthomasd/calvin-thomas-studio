@@ -16,6 +16,9 @@ export const metadata = {
     description: 'Meet Calvin and Gabriella — Toronto-based photographers behind Calvin Thomas Studio, specializing in natural, modern headshots and portraits.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 export default function AboutPage() {

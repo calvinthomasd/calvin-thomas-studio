@@ -14,6 +14,9 @@ export const metadata = {
     description: 'Browse headshot session pricing for professionals, actors, and corporate teams at Calvin Thomas Studio in Toronto.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/pricing',
+  },
 }
 
 export default function PricingPage() {

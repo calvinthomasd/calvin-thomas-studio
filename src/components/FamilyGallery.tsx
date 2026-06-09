@@ -66,7 +66,7 @@ export default function FamilyGallery() {
             <Image
               key={img}
               src={`/family-gallery/${img}`}
-              alt={`Family photo ${i + 1}`}
+              alt={`Toronto family portrait session by Calvin Thomas Studio — photo ${i + 1} of ${images.length}`}
               fill
               sizes="52vw"
               className={`${styles.photo} ${i === index ? styles.photoActive : styles.photoInactive}`}

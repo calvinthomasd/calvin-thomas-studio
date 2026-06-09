@@ -14,6 +14,9 @@ export const metadata = {
     description: 'Book your headshot or portrait session at Calvin Thomas Studio in Toronto. View our calendar or get in touch.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/bookings',
+  },
 }
 
 export default function Bookings() {

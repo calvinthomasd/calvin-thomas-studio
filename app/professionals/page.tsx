@@ -15,13 +15,38 @@ export const metadata = {
     description: 'Modern, polished headshots for business professionals, executives, and corporate teams in Toronto.',
     images: ['/og-image.jpg'],
   },
+  alternates: {
+    canonical: '/professionals',
+  },
 }
 
 export default function ProfessionalsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': 'https://calvinthomas.ca/professionals',
+    name: 'Professional Headshots Toronto',
+    description: 'Modern, polished headshots for business professionals, executives, and corporate teams in Toronto.',
+    provider: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://calvinthomas.ca',
+      name: 'Calvin Thomas Studio',
+    },
+    areaServed: { '@type': 'City', name: 'Toronto' },
+    serviceType: 'Photography',
+    url: 'https://calvinthomas.ca/professionals',
+  }
+
   return (
-    <main>
-      <ProfessionalHero />
-      <ProfessionalGallery />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main>
+        <ProfessionalHero />
+        <ProfessionalGallery />
+      </main>
+    </>
   )
 }
