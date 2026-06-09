@@ -37,11 +37,11 @@ export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://calvinthomas.studio',
+    '@id': 'https://calvinthomas.ca',
     name: 'Calvin Thomas Studio',
     description:
       'Premium headshot and portrait photography in Toronto for actors, business professionals, and corporate teams.',
-    url: 'https://calvinthomas.studio',
+    url: 'https://calvinthomas.ca',
     email: 'info@calvinthomas.ca',
     address: {
       '@type': 'PostalAddress',
@@ -49,7 +49,7 @@ export default function Home() {
       addressRegion: 'ON',
       addressCountry: 'CA',
     },
-    image: 'https://calvinthomas.studio/og-image.jpg',
+    image: 'https://calvinthomas.ca/og-image.jpg',
     priceRange: '$$',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

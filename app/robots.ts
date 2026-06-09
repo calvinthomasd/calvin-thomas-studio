@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://calvinthomas.studio/sitemap.xml',
+    sitemap: 'https://calvinthomas.ca/sitemap.xml',
   }
 }

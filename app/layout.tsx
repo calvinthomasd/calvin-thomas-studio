@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://calvinthomas.studio'), // ← update to your real domain
+  metadataBase: new URL('https://calvinthomas.ca'), // ← update to your real domain
   title: {
     default: 'Calvin Thomas Studio — Toronto Headshot Photographer',
     template: '%s | Calvin Thomas Studio',
