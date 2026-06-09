@@ -268,7 +268,7 @@ export default function ProfessionalGallery() {
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 768px) 50vw, 340px"
                 loading="lazy"
                 className={styles.image}
               />

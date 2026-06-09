@@ -48,7 +48,7 @@ export default function PricingDirectory() {
                 src={photo}
                 alt={alt}
                 fill
-                sizes="(max-width: 768px) 90vw, 30vw"
+                sizes="(max-width: 768px) 95vw, 30vw"
                 className={styles.image}
               />
               <div className={styles.scrim} />

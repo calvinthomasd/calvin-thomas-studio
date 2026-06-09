@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
 import styles from './Nav.module.css'
 
 const links = [
@@ -15,11 +14,8 @@ const links = [
 ]
 
 export default function Nav() {
-  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-
-  if (pathname === '/family') return null
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)

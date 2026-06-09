@@ -69,7 +69,7 @@ export default function ProfessionalPricing() {
         <div className={styles.heroGallery}>
           {heroImages.map((img, i) => (
             <div key={i} className={styles.heroGalleryItem}>
-              <Image src={img.src} alt={img.alt} fill sizes="25vw" className={styles.heroImage} priority={i < 3} />
+              <Image src={img.src} alt={img.alt} fill sizes="(max-width: 900px) 33vw, 17vw" className={styles.heroImage} priority={i < 3} />
             </div>
           ))}
         </div>

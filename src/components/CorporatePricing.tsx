@@ -26,7 +26,7 @@ export default function CorporatePricing() {
             { src: '/corp-gallery/headshot-white-background-studio-toronto.jpg', alt: 'Toronto studio headshot white background' },
           ].map((img, i) => (
             <div key={i} className={styles.altGalleryItem}>
-              <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.image} />
+              <Image src={img.src} alt={img.alt} fill sizes="(max-width: 900px) 33vw, 17vw" className={styles.image} />
             </div>
           ))}
         </div>
@@ -58,7 +58,7 @@ export default function CorporatePricing() {
           { src: '/corp-gallery/toronto-startup-founders-headshot-editorial.jpg',    alt: 'Toronto startup founders headshot editorial' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
-            <Image src={img.src} alt={img.alt} fill sizes="33vw" className={styles.teamGalleryImage} />
+            <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 17vw" className={styles.teamGalleryImage} />
           </div>
         ))}
       </section>
@@ -137,7 +137,7 @@ export default function CorporatePricing() {
           { src: '/corp-gallery/corporate-headshot-man-tie-formal-dark-backdrop.jpg', alt: 'Corporate headshot man tie formal dark backdrop' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
-            <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.teamGalleryImage} />
+            <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 17vw" className={styles.teamGalleryImage} />
           </div>
         ))}
       </section>
@@ -196,7 +196,7 @@ export default function CorporatePricing() {
           { src: '/corp-gallery/business-professional-headshot-man-grey-background.jpg', alt: 'Business professional headshot man grey background' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
-            <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.teamGalleryImage} />
+            <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 17vw" className={styles.teamGalleryImage} />
           </div>
         ))}
       </section>
@@ -311,7 +311,7 @@ export default function CorporatePricing() {
           { src: '/corp-gallery/executive-portrait-man-slim-fit-suit-confident.jpg', alt: 'Executive portrait man slim fit suit confident' },
         ].map((img, i) => (
           <div key={i} className={styles.teamGalleryItem}>
-            <Image src={img.src} alt={img.alt} fill sizes="17vw" className={styles.teamGalleryImage} />
+            <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 17vw" className={styles.teamGalleryImage} />
           </div>
         ))}
       </section>

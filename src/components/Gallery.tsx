@@ -63,7 +63,7 @@ export default function Gallery() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
+                  sizes="(max-width: 768px) 50vw, 317px"
                   loading={img.id <= 4 ? 'eager' : 'lazy'}
                   className={styles.image}
                 />
