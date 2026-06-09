@@ -272,8 +272,8 @@
 .logoImage {
   height: 40px;
   width: auto;
-  filter: grayscale(100%);
-  opacity: 0.6;
+  filter: brightness(0);
+  opacity: 0.75;
   transition: opacity 0.2s ease;
 }
 

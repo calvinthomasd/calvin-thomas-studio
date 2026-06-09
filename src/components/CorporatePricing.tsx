@@ -334,7 +334,7 @@ export default function CorporatePricing() {
                 { src: '/corp-logos/StrategyCorp-Logo-e1573222091350.png', alt: 'StrategyCorp',           w: 771,  h: 587,  displayH: 70 },
                 { src: '/corp-logos/ay_logos_black-1.png.webp',            alt: 'Avison Young',           w: 700,  h: 426,  displayH: 60 },
                 { src: '/corp-logos/0348_637551846516900837.png',          alt: 'Torkin Manes',           w: 1000, h: 600,  displayH: 100 },
-                { src: '/corp-logos/bennett-jones-logo-toronto.png',       alt: 'Bennett Jones',          w: 900,  h: 200  },
+                { src: '/corp-logos/7shifts-logo.png',                          alt: '7shifts',                w: 900,  h: 200  },
               ].map((logo, i) => (
                 <div key={i} className={styles.logoItem}>
                   <Image src={logo.src} alt={logo.alt} width={logo.w} height={logo.h} className={styles.logoImage} style={logo.displayH ? { height: logo.displayH } : undefined} />
