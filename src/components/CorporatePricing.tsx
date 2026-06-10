@@ -335,6 +335,13 @@ export default function CorporatePricing() {
                 { src: '/corp-logos/ay_logos_black-1.png.webp',            alt: 'Avison Young',           w: 700,  h: 426,  displayH: 60 },
                 { src: '/corp-logos/0348_637551846516900837.png',          alt: 'Torkin Manes',           w: 1000, h: 600,  displayH: 100 },
                 { src: '/corp-logos/7shifts-logo.png',                          alt: '7shifts',                w: 900,  h: 200  },
+                { src: '/corp-logos/EY_logo_2019.svg.png',                     alt: 'EY',                     w: 960,  h: 970,  displayH: 70 },
+                { src: '/corp-logos/Egon_Zehnder_logo.svg.png',                alt: 'Egon Zehnder',           w: 1920, h: 321  },
+                { src: '/corp-logos/WA_Logo_PMS_432C.png',                     alt: 'Wellington-Altus',       w: 800,  h: 246,  displayH: 65 },
+                { src: '/corp-logos/eb958b14-0689-9fe8-8360-d893ed090f50.png', alt: 'Fengate',                w: 631,  h: 155  },
+                { src: '/corp-logos/logo.png',                                 alt: 'Medcan',                 w: 1872, h: 710  },
+                { src: '/corp-logos/maple-healthcare-logo.png',                alt: 'Maple',                  w: 732,  h: 300  },
+                { src: '/corp-logos/goodmans-logo.png',                        alt: 'Goodmans LLP',           w: 574,  h: 222,  displayH: 60 },
               ].map((logo, i) => (
                 <div key={i} className={styles.logoItem}>
                   <Image src={logo.src} alt={logo.alt} width={logo.w} height={logo.h} className={styles.logoImage} style={logo.displayH ? { height: logo.displayH } : undefined} />
