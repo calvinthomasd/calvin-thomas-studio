@@ -251,6 +251,12 @@ export default function CorporatePricing() {
         </div>
       </section>
 
+      {/* Pull quote — Lisa Piersanti */}
+      <blockquote className={styles.pullQuote}>
+        <p className={styles.pullQuoteText}>&ldquo;I can&apos;t recommend Gabi enough. I&apos;ve worked with her for personal headshots and corporate events, and people always notice the care and energy she brings behind the camera. She has a way of making you feel completely at ease, and somehow captures the little in-between moments that bring the photos to life.&rdquo;</p>
+        <footer className={styles.pullQuoteAttrib}>— Lisa Piersanti, Head of Marketing, Junction</footer>
+      </blockquote>
+
       {/* Resources */}
       <section className={styles.altSection}>
         <h2 className={styles.altHeading}>
