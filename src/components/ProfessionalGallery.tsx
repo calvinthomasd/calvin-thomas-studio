@@ -204,6 +204,7 @@ export default function ProfessionalGallery() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
   const [mounted, setMounted] = useState(false)
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setMounted(true) }, [])
 
   useEffect(() => {

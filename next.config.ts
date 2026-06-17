@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Removes X-Powered-By header
   poweredByHeader: false,
+  async redirects() {
+    return [
+      { source: '/professional-pricing',    destination: '/professionals/pricing', permanent: true },
+      { source: '/headshot-pricing',        destination: '/pricing',               permanent: true },
+      { source: '/booking',                 destination: '/bookings',              permanent: true },
+      { source: '/actor-headshots-toronto', destination: '/actors',                permanent: true },
+      { source: '/2259-2',                  destination: '/',                      permanent: true },
+    ]
+  },
 }
 
 export default nextConfig
