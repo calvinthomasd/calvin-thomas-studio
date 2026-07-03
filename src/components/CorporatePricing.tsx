@@ -201,6 +201,13 @@ export default function CorporatePricing() {
         ))}
       </section>
 
+      {/* Pull quote — Karen Oliveira */}
+      <blockquote className={styles.pullQuote}>
+        <p className={styles.pullQuoteText}>&ldquo;Aird &amp; Berlis has had the pleasure of working with Calvin, and now Gabi, for the past 10 years. Throughout that time, they have become invaluable partners in helping us capture the people that represent our organization. They consistently take the time to understand our vision and bring it to life through high-quality images. Their ability to make people feel comfortable in front of the camera, while capturing authentic and polished photographs, is a true testament to their talent and expertise.</p>
+        <p className={styles.pullQuoteText}>We greatly value the relationship we have built over the years and appreciate the dedication and creativity they bring to every project. We look forward to continuing our partnership with them for many years to come.&rdquo;</p>
+        <footer className={styles.pullQuoteAttrib}>— Karen Oliveira, Manager, Communications, Aird &amp; Berlis LLP</footer>
+      </blockquote>
+
       {/* After the Shoot */}
       <section className={styles.altSection}>
         <h2 className={styles.altHeading}>
