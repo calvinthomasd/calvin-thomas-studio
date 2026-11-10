@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
     return [
       { source: '/professional-pricing',    destination: '/professionals/pricing', permanent: true },
       { source: '/headshot-pricing',        destination: '/pricing',               permanent: true },
+      { source: '/actor-pricing',           destination: '/actors/pricing',        permanent: true },
       { source: '/booking',                 destination: '/bookings',              permanent: true },
       { source: '/actor-headshots-toronto', destination: '/actors',                permanent: true },
       { source: '/2259-2',                  destination: '/',                      permanent: true },
