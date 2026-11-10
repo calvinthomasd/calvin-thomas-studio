@@ -1,7 +1,7 @@
 import PricingDirectory from '@/components/PricingDirectory'
 
 export const metadata = {
-  title: 'Pricing | Calvin Thomas Studio',
+  title: 'Pricing',
   description: 'Browse headshot session pricing for professionals, actors, and corporate teams at Calvin Thomas Studio in Toronto.',
   openGraph: {
     title: 'Pricing | Calvin Thomas Studio',

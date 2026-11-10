@@ -3,7 +3,7 @@ import AboutCalvin from '@/components/AboutCalvin'
 import AboutGabi from '@/components/AboutGabi'
 
 export const metadata = {
-  title: 'About | Calvin Thomas Studio',
+  title: 'About',
   description: 'Meet Calvin and Gabriella — Toronto-based photographers behind Calvin Thomas Studio, specializing in natural, modern headshots and portraits.',
   openGraph: {
     title: 'About | Calvin Thomas Studio',

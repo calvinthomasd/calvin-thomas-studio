@@ -1,7 +1,7 @@
 import BookingsPage from '@/components/BookingsPage'
 
 export const metadata = {
-  title: 'Bookings | Calvin Thomas Studio',
+  title: 'Bookings',
   description: 'Book your headshot or portrait session at Calvin Thomas Studio in Toronto. View our calendar or get in touch.',
   openGraph: {
     title: 'Bookings | Calvin Thomas Studio',

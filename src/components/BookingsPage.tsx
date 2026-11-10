@@ -6,9 +6,9 @@ export default function BookingsPage() {
 
       {/* Book your headshot */}
       <section className={styles.altSection}>
-        <h2 className={styles.altHeading}>
+        <h1 className={styles.altHeading}>
           BOOK YOUR HEADSHOT<span className={styles.dot}>.</span>
-        </h2>
+        </h1>
         <div className={styles.altBody}>
           <p className={styles.altBodyLabel}>Reservations</p>
           <div className={styles.altBodyText}>
@@ -33,16 +33,16 @@ export default function BookingsPage() {
         <div className={styles.altBody}>
           <p className={styles.altBodyLabel}>Location</p>
           <div className={styles.altBodyText}>
-            <p>Located at Dundas St W &amp; Dufferin Ave, Toronto. Sessions are by appointment only.</p>
+            <p>Located at 1520 Dundas St W, Toronto, ON M6K 1T5. Sessions are by appointment only.</p>
             <div className={styles.mapWrap}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0!2d-79.4354!3d43.6525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34b4e1fa8e5b%3A0x1!2sDundas+St+W+%26+Dufferin+St%2C+Toronto%2C+ON!5e0!3m2!1sen!2sca!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.833259285922!2d-79.43538312355273!3d43.64990287110228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34516ed65b31%3A0xa56c6ae237a1780!2s1520%20Dundas%20St%20W%2C%20Toronto%2C%20ON%20M6K%201T5!5e0!3m2!1sen!2sca!4v1794352308526!5m2!1sen!2sca"
                 width="100%"
                 height="100%"
                 className={styles.mapIframe}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
                 title="Calvin Thomas Studio location"
               />
             </div>

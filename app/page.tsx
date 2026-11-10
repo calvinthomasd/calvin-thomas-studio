@@ -43,22 +43,20 @@ export default function Home() {
       'Premium headshot and portrait photography in Toronto for actors, business professionals, and corporate teams.',
     url: 'https://calvinthomas.ca',
     email: 'info@calvinthomas.ca',
+    telephone: '+1-647-407-7827',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '1520 Dundas St W',
+      postalCode: 'M6K 1T5',
       addressLocality: 'Toronto',
       addressRegion: 'ON',
       addressCountry: 'CA',
     },
     image: 'https://calvinthomas.ca/og-image.jpg',
     priceRange: '$$',
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
     sameAs: [
       'https://instagram.com/calvinthomasstudio',
+      'https://maps.app.goo.gl/pjmgnvPkamit2J8A8',
     ],
   }
 

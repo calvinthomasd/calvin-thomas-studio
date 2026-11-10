@@ -1,7 +1,7 @@
 import CorporatePricing from '@/components/CorporatePricing'
 
 export const metadata = {
-  title: 'Corporate & Team Headshots | Calvin Thomas Studio',
+  title: 'Corporate & Team Headshots',
   description: 'On-location company headshot photography for teams and companies throughout Toronto and the GTA.',
   openGraph: {
     title: 'Corporate & Team Headshots | Calvin Thomas Studio',
